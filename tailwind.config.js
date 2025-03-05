@@ -6,7 +6,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}", // Scanna alla JS/TS/JSX/TSX-filer i src-mappen
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        fontFamily: {
+          space: ["Space Grotesk", "sans-serif"],
+        },
+        fadeInSlow: "fadeIn 3s ease-in-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+    },
   },
   plugins: [],
 };
