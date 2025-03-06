@@ -8,6 +8,8 @@ import StuffIveDone from "./components/StuffIveDone";
 import Quote from "./components/Qoute";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import VanillaJavascriptProjects from "./components/VanillaJavascriptProjects";
+import FigmaProject from "./components/FigmaProject";
 
 
 function App() {
@@ -18,10 +20,13 @@ function App() {
       <SeekingLIASection />
       <MySkills/>
       <MyProjects/>
+      <VanillaJavascriptProjects/>
+      <FigmaProject/>
       <StuffIveDone/>
       <Quote/>
       <Footer/>
       <ScrollToTop/>
+      
       
 
 
