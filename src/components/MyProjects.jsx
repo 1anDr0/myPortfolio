@@ -1,39 +1,40 @@
-// import React from "react";
-// import arenaquizetImg from "../assets/football-quiz.png";
+import React from "react";
+import { FiArrowLeft } from "react-icons/fi";
 
-// const MyProjects = () => {
-//   return (
-//     <section className="bg-white text-black py-20 px-[300px]">
-//       <h2
-//         className="text-4xl font-medium tracking-[-0.05em] mb-10"
-//         style={{ fontFamily: "Helvetica, sans-serif" }}
-//       >
-//         My Projects
-//       </h2>
+const MyProjects = () => {
+  return (
+    <section className="bg-[#F9F6E6] text-[#1C1C1C] py-8 flex flex-col justify-start items-start mt-[-0px] pl-[780px] pr-[300px] pb-[200px] relative">
 
-//        <div className="grid grid-cols-1 gap-10">
-//         {/* Arenaquizet */}
-//         <a
-//           href="https://arenaquizet.netlify.app/"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//           className="group block overflow-hidden"
-//         >
-//           <img
-//             src={arenaquizetImg}
-//             alt="Arenaquizet"
-//             className="w-full h-[100px] object-cover group-hover:scale-105 transition-transform duration-300"
-//           />
-//           <h3
-//             className="text-2xl font-medium mt-4"
-//             style={{ fontFamily: "Helvetica, sans-serif" }}
-//           >
-//             Arenaquizet
-//           </h3>
-//         </a>
-//       </div> 
-//     </section>
-//   );
-// };
+      {/* Pil långt till vänster */}
+      <button
+        className="absolute left-[400px] top-[55%] -translate-y-1/2 text-[#1C1C1C] text-[72px] transition-transform duration-300 hover:-translate-x-2"
+      >
+        <FiArrowLeft />
+      </button>
 
-// export default MyProjects;
+      <h2
+        className="text-[96px] font-medium tracking-[-0.07em] leading-[1.1] text-left w-full"
+        style={{ fontFamily: "Helvetica, sans-serif" }}
+      >
+        My Projects
+      </h2>
+
+      <div className="w-full max-w-[6000px] mt-10 flex flex-col items-start ">
+        <h3
+          className="text-[48px] font-medium tracking-[-0.05em] mb-4 text-right"
+          style={{ fontFamily: "Helvetica, sans-serif" }}
+        >
+          React
+        </h3>
+        <div className="w-[700px] h-[393px] bg-white text-black flex items-center justify-center">
+          <span className="text-[24px]" style={{ fontFamily: "Helvetica, sans-serif" }}>
+            Placeholder för projekt
+          </span>
+        </div>
+      </div>
+
+    </section>
+  );
+};
+
+export default MyProjects;

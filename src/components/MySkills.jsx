@@ -11,7 +11,7 @@ const MySkills = () => {
   const [isOpenDesign, setIsOpenDesign] = useState(false);
 
   return (
-    <section className="bg-[#BAD8B6] text-black py-6 pl-[380px] pr-[700px] pb-[200px] ">
+    <section className="bg-[#BAD8B6] text-[#1C1C1C] py-6 pl-[300px] pr-[820px] pb-[200px] ">
 
 
 
@@ -19,7 +19,7 @@ const MySkills = () => {
         My skills/experience
       </h1>
 
-      <div className="w-full border-t border-b border-black mt-10" >
+      <div className="w-full border-t border-b border-[#1C1C1C] mt-10" >
         <button
           className="w-full flex justify-between items-center py-1 text-[24px] font-medium tracking-[-0.05em] tracking-tight cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
@@ -37,7 +37,7 @@ const MySkills = () => {
           }`}
         >
           <div
-            className="text-[72px] font-black leading-[150%] tracking-[-0.07em] flex flex-col space-y-4"
+            className="text-[72px] font-[#1C1C1C] leading-[150%] tracking-[-0.07em] flex flex-col space-y-4"
             style={{ fontFamily: "Helvetica, sans-serif" }}
           >
             <div className="flex justify-between w-full transition-transform duration-1000 ease-out hover:translate-x-[-10px]">
@@ -74,7 +74,7 @@ const MySkills = () => {
         </div>
       </div>
 
-      <div className="w-full border-t border-b border-black mt-12">
+      <div className="w-full border-t border-b border-[#1C1C1C] mt-12">
         <button
           className="w-full flex justify-between items-center py-1 text-[24px] font-medium tracking-[-0.05em] tracking-tight cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
@@ -89,7 +89,7 @@ const MySkills = () => {
           }`}
         >
           <div
-            className="text-[72px] font-black leading-[150%] tracking-[-0.07em] flex flex-col space-y-4"
+            className="text-[72px] font-[#1C1C1C] leading-[150%] tracking-[-0.07em] flex flex-col space-y-4"
             style={{ fontFamily: "Helvetica, sans-serif" }}
           >
             <div className="flex justify-between w-full transition-transform duration-1000 ease-out hover:translate-x-[-10px]">

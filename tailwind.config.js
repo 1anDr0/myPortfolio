@@ -8,9 +8,6 @@ export default {
   theme: {
     extend: {
       animation: {
-        fontFamily: {
-          space: ["Space Grotesk", "sans-serif"],
-        },
         fadeInSlow: "fadeIn 3s ease-in-out",
       },
       keyframes: {

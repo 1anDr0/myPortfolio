@@ -5,8 +5,8 @@ const Footer = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <section className="bg-black py-20">
-      <footer className="bg-black text-white py-10 w-full max-w-full">
+    <section className="bg-[#1C1C1C] py-20">
+      <footer className="bg-[#1C1C1C] text-white py-10 w-full max-w-full">
         <div className="mx-[300px] border-t border-b border-white">
           <button
             className="w-full flex justify-between items-center py-4 text-[24px] font-medium tracking-tight cursor-pointer"

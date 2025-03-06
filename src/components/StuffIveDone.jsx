@@ -21,12 +21,12 @@ const StuffIveDone = () => {
   };
 
   return (
-    <section className="bg-black text-white py-8 flex flex-col justify-start items-start mt-[-0px] pl-[780px] pr-[300px] pb-[200px] relative">
+    <section className="bg-white text-[#1C1C1C] py-8 flex flex-col justify-start items-start mt-[-0px] pl-[780px] pr-[300px] pb-[200px] relative">
       
       {/* Pil långt till vänster */}
       <button
         onClick={nextSlide}
-        className="absolute left-[400px] top-[55%] -translate-y-1/2 text-white text-[72px] transition-transform duration-300 hover:-translate-x-2"
+        className="absolute left-[400px] top-[55%] -translate-y-1/2 text-[#1C1C1C] text-[72px] transition-transform duration-300 hover:-translate-x-2"
       >
         <FiArrowLeft />
       </button>
@@ -44,7 +44,7 @@ const StuffIveDone = () => {
           <div className="flex justify-center">
             <iframe
               width="700"
-              height="380"
+              height="393"
               src="https://www.youtube.com/embed/HNLajDKs4Jg"
               title="YouTube video player"
               frameBorder="0"

@@ -5,7 +5,7 @@ const SeekingLIASection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="bg-black text-white py-8 flex flex-col justify-start items-start mt-[-120px] pl-[780px] pr-[300px] pb-[200px] transform -translate-y-[0px]">
+    <section className="bg-[#1C1C1C] text-white py-8 flex flex-col justify-start items-start mt-[-120px] pl-[780px] pr-[300px] pb-[200px] transform -translate-y-[0px]">
       <h1
         className="text-[96px] font-medium tracking-[-0.07em] leading-[1.1] text-left w-full"
         style={{ fontFamily: "Helvetica, sans-serif" }}
@@ -29,7 +29,7 @@ const SeekingLIASection = () => {
           }`}
         >
           <p
-            className="text-[20px] font-regular leading-[1.5] max-w-[800px]"
+            className="text-[20px] font-regular leading-[1.5] max-w-[780px]"
             style={{ fontFamily: "Helvetica, sans-serif" }}
           >
             I’m a frontend developer with a strong passion for layout and design.
@@ -40,17 +40,18 @@ const SeekingLIASection = () => {
             responsiveness. I’m always exploring new trends in web design to refine
             my craft, ensuring that my work balances aesthetics with functionality.
           </p>
+          <div className="mt-10">
+        <button
+          className="border-2 border-white text-white bg-[#1C1C1C] h-[44px] px-[20px] rounded-full text-[44px] font-medium tracking-tight flex items-center justify-center gap-3 transition-all duration-300 hover:bg-white hover:text-[#1C1C1C]"
+          style={{ fontFamily: "Helvetica, sans-serif" }}
+        >
+          COVER LETTER <FiDownload className="w-10 h-10" />
+        </button>
+      </div>
         </div>
       </div>
 
-      <div className="mt-10">
-        <button
-          className="border-2 border-white text-white bg-black h-[44px] px-[20px] rounded-full text-[44px] font-medium tracking-tight flex items-center justify-center gap-3 transition-all duration-300 hover:bg-white hover:text-black"
-          style={{ fontFamily: "Helvetica, sans-serif" }}
-        >
-          READ MY COVER LETTER <FiDownload className="w-10 h-10" />
-        </button>
-      </div>
+      
     </section>
   );
 };

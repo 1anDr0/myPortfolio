@@ -12,10 +12,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black text-white z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[#1C1C1C] text-white z-50">
     <div
-      className={`w-full px-[300px] border-t border-b border-white transition-all duration-500 ${
-        isOpen ? "py-2" : "py-1"
+      className={`w-full px-[300px] border-t border-b border-white transition-all duration-300 ${
+        isOpen ? "py-1" : "py-1"
       }`}
       style={{ fontFamily: "Helvetica, sans-serif" }}
     >
@@ -38,8 +38,8 @@ const Navbar = () => {
   
       {/* Meny */}
       <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out bg-black ${
-          isOpen ? "max-h-[500px] opacity-100 pt-1" : "max-h-0 opacity-0"
+        className={`overflow-hidden transition-all duration-500 ease-in-out bg-[#1C1C1C]   ${
+          isOpen ? "max-h-[500px] opacity-100 pt-6" : "max-h-0 opacity-0"
         }`}
       >
         <div
