@@ -9,9 +9,7 @@ const MyProjects = () => {
 
   return (
     <section className="bg-[#6D9886] text-white py-6 px-6 md:pl-[780px] md:pr-[300px] pb-[200px] relative">
-      <div className="fixed left-[50px] top-1/2 transform -translate-y-1/2 z-50 text-[24px] text-[#1C1C1C]">
-        <FaGithub />
-      </div>
+      
       <h1
         className="text-[48px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full mb-10"
         style={{ fontFamily: "Helvetica, sans-serif" }}
@@ -23,7 +21,7 @@ const MyProjects = () => {
       <div className="w-full max-w-[1000px] border-t border-b border-white mb-12">
         <button
           onClick={() => setIsOpenReact(!isOpenReact)}
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-light tracking-[-0.05em] cursor-pointer"
+          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-medium tracking-[-0.07em] cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
         >
           <span>React</span>
@@ -42,7 +40,7 @@ const MyProjects = () => {
       <div className="w-full max-w-[1000px] border-t border-b border-white mb-12">
         <button
           onClick={() => setIsOpenVanilla(!isOpenVanilla)}
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-light tracking-[-0.05em] cursor-pointer"
+          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-medium tracking-[-0.05em] cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
         >
           <span className={`text-[32px] md:text-[48px] transform transition-transform duration-500 ${isOpenVanilla ? 'rotate-45' : 'rotate-0'}`}><FiArrowDownRight /></span>
@@ -59,7 +57,7 @@ const MyProjects = () => {
       <div className="w-full max-w-[1000px] border-t border-b border-white">
         <button
           onClick={() => setIsOpenFigma(!isOpenFigma)}
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-light tracking-[-0.05em] cursor-pointer"
+          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-medium tracking-[-0.05em] cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
         >
           <span>Figma</span>

@@ -32,7 +32,7 @@ const StuffIveDone = () => {
       <div className="w-full max-w-[800px] border-t border-b border-black">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-light tracking-[-0.05em] cursor-pointer"
+          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-medium tracking-[-0.05em] cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
         >
           <span>YouTube</span>

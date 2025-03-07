@@ -15,7 +15,7 @@ const SeekingLIASection = () => {
 
       <div className="w-full max-w-[1000px] border-t border-b border-white mt-6">
         <button
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-light tracking-[-0.05em] tracking-tight cursor-pointer"
+          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-medium tracking-[-0.05em] tracking-tight cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
           onClick={() => setIsOpen(!isOpen)}
         >

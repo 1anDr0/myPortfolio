@@ -62,7 +62,7 @@ const Hero = () => {
 
       <div className="w-full max-w-[780px] border-t border-b border-[#1C1C1C] mt-10 z-30">
         <button
-          className="w-full flex justify-between items-center py-1 text-[24px] md:text-[32px] font-light tracking-[-0.02em] cursor-pointer"
+          className="w-full flex justify-between items-center py-1 text-[24px] md:text-[32px] font-medium tracking-[-0.02em] cursor-pointer"
           onClick={() => setIsOpenCV(!isOpenCV)}
         >
           <span>CV</span>
