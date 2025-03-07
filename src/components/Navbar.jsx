@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-[#1C1C1C] text-white z-50">
     <div
-      className={`w-full px-[300px] border-t border-b border-white transition-all duration-300 ${
+      className={`w-full md:px-[300px] border-t border-b border-white transition-all duration-300 ${
         isOpen ? "py-1" : "py-1"
       }`}
       style={{ fontFamily: "Helvetica, sans-serif" }}
@@ -24,7 +24,7 @@ const Navbar = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex justify-between items-center cursor-pointer"
       >
-        <span className="text-[24px] font-medium tracking-[-0.05em]">
+        <span className="text-[20px] md:text-[24px] font-medium tracking-[-0.05em]">
           This is what you need
         </span>
         <span
@@ -43,7 +43,7 @@ const Navbar = () => {
         }`}
       >
         <div
-          className="flex justify-end space-x-8 text-[24px] font-medium tracking-[-0.05em]"
+          className="flex justify-end space-x-8 text-[12px] md:text-[24px] font-medium tracking-[-0.05em]"
           style={{ fontFamily: "Helvetica, sans-serif" }}
         >
           <a href="#cv" className="hover:underline">

@@ -21,7 +21,7 @@ const StuffIveDone = () => {
   };
 
   return (
-    <section className="relative bg-[#FFA725] text-white py-8 px-6 md:pl-[300px] md:pr-[700px] pb-[200px]">
+    <section className="relative bg-[#FFF5E4] text-[#1C1C1C] py-8 px-6 md:pl-[300px] md:pr-[700px] pb-[200px]">
       <h2
         className="text-[48px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full mb-10"
         style={{ fontFamily: "Helvetica, sans-serif" }}
@@ -29,7 +29,7 @@ const StuffIveDone = () => {
         Stuff I've Done Professionally
       </h2>
 
-      <div className="w-full max-w-[800px] border-t border-b border-white">
+      <div className="w-full max-w-[800px] border-t border-b border-black">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-light tracking-[-0.05em] cursor-pointer"
@@ -53,7 +53,7 @@ const StuffIveDone = () => {
           <div className="relative flex items-center justify-center">
             <button
               onClick={prevSlide}
-              className="absolute left-2 top-1/2 -translate-y-1/2 text-white text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50"
+              className="absolute left-2 top-1/2 -translate-y-1/2 text-black text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50"
               style={{ fontFamily: "Helvetica, sans-serif" }}
             >
               BACK
@@ -97,7 +97,7 @@ const StuffIveDone = () => {
 
             <button
               onClick={nextSlide}
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-white text-[14px] md:text-[20px] tracking-widest rotate-90 origin-center z-10 hover:opacity-50"
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-black text-[14px] md:text-[20px] tracking-widest rotate-90 origin-center z-10 hover:opacity-50"
               style={{ fontFamily: "Helvetica, sans-serif" }}
             >
               NEXT

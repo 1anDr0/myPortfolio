@@ -2,52 +2,76 @@ import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 
 const Footer = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="bg-[#1C1C1C] py-20">
-      <footer className="bg-[#1C1C1C] text-white py-10 w-full max-w-full">
-        <div className="mx-[300px] border-t border-b border-white">
-          <button
-            className="w-full flex justify-between items-center py-4 text-[24px] font-medium tracking-tight cursor-pointer"
-            style={{ fontFamily: "Helvetica, sans-serif" }}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <span>Contact me</span>
-            <span className="text-[24px]">{isOpen ? "−" : "+"}</span>
-          </button>
-
-          <div
-            className={`overflow-hidden transition-all duration-500 ease-in-out ${
-              isOpen ? "max-h-[500px] opacity-100 py-5" : "max-h-0 opacity-0"
+    <section className="bg-[#1C1C1C] text-white py-20 px-6 md:px-[300px]">
+      <footer className="w-full border-t border-b border-white">
+        <button
+          className="w-full flex justify-between items-center py-4 text-[32px] font-light tracking-[-0.05em] cursor-pointer"
+          style={{ fontFamily: "Helvetica, sans-serif" }}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span>Contact</span>
+          <span
+            className={`text-[48px] transform transition-transform duration-500 ${
+              isOpen ? "rotate-45" : "rotate-0"
             }`}
           >
-            <div className="grid grid-cols-3 gap-10 text-[20px] font-regular leading-[1.5]"
-              style={{ fontFamily: "Helvetica, sans-serif" }}>
-              <div className="text-left space-y-0">
-                <p>Email</p>
-                <p>Phone</p>
-                <p>Location</p>
-                <p>LinkedIn</p>
-                <p>GitHub</p>
-              </div>
+            +
+          </span>
+        </button>
 
-              <div className="flex flex-col items-center space-y-2">
-                <Icon icon="mdi:email" width="24" height="24" />
-                <Icon icon="mdi:phone" width="24" height="24" />
-                <Icon icon="mdi:map-marker" width="24" height="24" />
-                <Icon icon="mdi:linkedin" width="24" height="24" />
-                <Icon icon="mdi:github" width="24" height="24" />
-              </div>
-
-              <div className="text-right space-y-0">
-                <p>jerker_danielsson@hotmail.com</p>
-                <p>073-992 97 98</p>
-                <p>Stockholm, Sweden</p>
-                <p><a href="https://linkedin.com/in/dittnamn" className="underline">linkedin.com/in/jerkerdanielsson</a></p>
-                <p><a href="https://github.com/dittgithub" className="underline">github.com/1anDr0</a></p>
-              </div>
+        <div
+          className={`overflow-hidden transition-all duration-500 ease-in-out ${
+            isOpen ? "max-h-[1000px] opacity-100 py-10" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center text-[20px] font-light space-y-6 md:space-y-0">
+            
+            <div className="flex items-center space-x-3">
+              <Icon icon="mdi:email-outline" width="24" height="24" />
+              <a href="mailto:jerker_danielsson@hotmail.com" className="underline">
+                jerker_danielsson@hotmail.com
+              </a>
             </div>
+
+            <div className="flex items-center space-x-3">
+              <Icon icon="mdi:phone-outline" width="24" height="24" />
+              <a href="tel:+46739929798" className="underline">
+                073-992 97 98
+              </a>
+            </div>
+
+            <div className="flex items-center space-x-3">
+              <Icon icon="mdi:map-marker-outline" width="24" height="24" />
+              <span>Stockholm, Sweden</span>
+            </div>
+
+            <div className="flex items-center space-x-3">
+              <Icon icon="mdi:linkedin" width="24" height="24" />
+              <a
+                href="https://linkedin.com/in/jerkerdanielsson"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                LinkedIn
+              </a>
+            </div>
+
+            <div className="flex items-center space-x-3">
+              <Icon icon="mdi:github" width="24" height="24" />
+              <a
+                href="https://github.com/1anDr0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                GitHub
+              </a>
+            </div>
+
           </div>
         </div>
       </footer>
@@ -56,6 +80,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 
