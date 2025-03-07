@@ -8,17 +8,16 @@ import StuffIveDone from "./components/StuffIveDone";
 import Quote from "./components/Qoute";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import GitHubBadge from "./components/GitHubBadge";
+import GithubScroller from "./components/GithubScroller";
 
 
 
 function App() {
   return (
     <div className="bg-white min-h-screen">
-       
+       <GithubScroller />
       <Navbar />
       <Hero />
-      <GitHubBadge />
       <SeekingLIASection />
       <MySkills/>
       <MyProjects/>
