@@ -5,17 +5,17 @@ const SeekingLIASection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="bg-[#1C1C1C] text-white py-8 flex flex-col justify-start items-start mt-[-120px] pl-[780px] pr-[300px] pb-[200px] transform -translate-y-[0px]">
+    <section className="bg-[#1C1C1C] text-white py-8 flex flex-col justify-start items-start mt-[-150px] pl-[780px] pr-[300px] pb-[200px] transform -translate-y-[0px]">
       <h1
-        className="text-[96px] font-medium tracking-[-0.07em] leading-[1.1] text-left w-full"
+        className="text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
-        Seeking LIA/internship from November 2025
+        Seeking LIA /internship from November 2025
       </h1>
 
       <div className="w-full max-w-[1000px] border-t border-b border-white mt-6">
         <button
-          className="w-full flex justify-between items-center py-1 text-[24px] font-medium tracking-[-0.05em] tracking-tight cursor-pointer"
+          className="w-full flex justify-between items-center py-1 text-[32px] font-light tracking-[-0.05em] tracking-tight cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
           onClick={() => setIsOpen(!isOpen)}
         >
