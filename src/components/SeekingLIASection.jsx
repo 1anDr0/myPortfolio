@@ -29,7 +29,7 @@ const SeekingLIASection = () => {
           }`}
         >
           <p
-            className="text-[16px] md:text-[20px] font-regular leading-[1.5] max-w-[780px]"
+            className="text-[12px] md:text-[20px] font-regular leading-[1.5] max-w-[780px]"
             style={{ fontFamily: "Helvetica, sans-serif" }}
           >
             I’m a frontend developer with a strong passion for layout and design.

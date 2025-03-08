@@ -81,7 +81,7 @@ const Hero = () => {
           }`}
         >
           <p
-            className="text-[18px] md:text-[20px] leading-[1.5] max-w-[800px]"
+            className="text-[12px] md:text-[20px] leading-[1.5] max-w-[800px]"
             style={{ fontFamily: "Helvetica, sans-serif" }}
           >
             Jag är en kreativ och noggrann frontendutvecklare med ett starkt öga för design och layout. Med en naturlig känsla för estetik ser jag detaljer som andra ofta missar, vilket resulterar i snygga och välstrukturerade lösningar. Jag är lugn, anpassningsbar och har lätt för att samarbeta, samtidigt som jag bidrar med en positiv och glad energi i team. Utöver mitt intresse för design har jag ett stort engagemang för idrott, både aktivt och som åskådare.

@@ -27,7 +27,7 @@ const MySkills = () => {
           </span>
         </button>
         <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenFrontend ? "max-h-[1000px] opacity-100 py-6" : "max-h-0 opacity-0"}`}>
-          <div className="text-[28px] md:text-[72px] font-[#1C1C1C] font-bold leading-[150%] tracking-[-0.07em] flex flex-col space-y-4">
+          <div className="text-[24px] md:text-[72px] font-[#1C1C1C] font-bold leading-[150%] tracking-[-0.07em] flex flex-col space-y-4">
             <div className="flex justify-between w-full transition-transform duration-1000 ease-out hover:translate-x-[-10px]">
               <span>HTML,</span>
               <span>CSS,</span>
@@ -68,7 +68,7 @@ const MySkills = () => {
           <span>Design</span>
         </button>
         <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenDesign ? "max-h-[1000px] opacity-100 py-6" : "max-h-0 opacity-0"}`}>
-          <div className="text-[28px] md:text-[72px] font-[#1C1C1C] font-bold leading-[150%] tracking-[-0.07em] flex flex-col space-y-4">
+          <div className="text-[24px] md:text-[72px] font-[#1C1C1C] font-bold leading-[150%] tracking-[-0.07em] flex flex-col space-y-4">
             <div className="flex justify-between w-full transition-transform duration-1000 ease-out hover:translate-x-[-10px]">
               <span>Figma,</span>
               <span>Miro,</span>
