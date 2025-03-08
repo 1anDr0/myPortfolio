@@ -29,7 +29,7 @@ const SeekingLIASection = () => {
           }`}
         >
           <p
-            className="text-[12px] md:text-[20px] font-regular leading-[1.5] max-w-[780px]"
+            className="text-[16px] md:text-[20px] font-regular leading-[1.5] max-w-[780px]"
             style={{ fontFamily: "Helvetica, sans-serif" }}
           >
             I’m a frontend developer with a strong passion for layout and design.
@@ -42,10 +42,10 @@ const SeekingLIASection = () => {
           </p>
           <div className="mt-10">
         <button
-          className="border-2 border-white text-white bg-[#1C1C1C] h-[44px] px-[20px] rounded-full text-[24px] md:text-[44px] font-medium tracking-tight flex items-center justify-center gap-3 transition-all duration-300 hover:bg-white hover:text-[#1C1C1C]"
+          className="border-2 border-white text-[#1C1C1C] bg-white h-[44px] px-[20px] rounded-full text-[24px] md:text-[44px] font-medium tracking-tight flex items-center justify-center gap-3 transition-all duration-300 hover:bg-[#1C1C1C] hover:text-white"
           style={{ fontFamily: "Helvetica, sans-serif" }}
         >
-          COVER LETTER <FiDownload className="w-8 h-8 md:w-10 md:h-10" />
+          COVER LETTER <FiDownload className="w-6 h-6 md:w-10 md:h-10" />
         </button>
       </div>
         </div>

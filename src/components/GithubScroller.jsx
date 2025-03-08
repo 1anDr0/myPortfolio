@@ -27,12 +27,12 @@ const GithubScroller = () => {
         rel="noopener noreferrer"
         className="hover:opacity-70 transition-opacity duration-300"
       >
-        <FaGithub className="w-10 h-10 md:w-12 md:h-12 text-black" />
+        <FaGithub className="w-8 h-8 md:w-10 md:h-10 text-black" />
       </a>
 
       {/* Vertikal text precis som BACK-knappen */}
       <span
-        className="text-black text-[14px] md:text-[24px] tracking-widest rotate-[-90deg] origin-center hover:opacity-50 mt-16"
+        className="text-black text-[14px] md:text-[16px] tracking-[+0.40em] tracking-widest rotate-[-90deg] origin-center hover:opacity-50 mt-20"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
         MY GITHUB
