@@ -10,7 +10,7 @@ const Hero = () => {
   const [isOpenCV, setIsOpenCV] = useState(false);
 
   return (
-    <section className="animate-fadeIn relative bg-[#FDFDFD] text-[#1C1C1C] min-h-screen flex flex-col px-6 md:px-[300px] md:pt-[250px] md:pb-[100px] overflow-hidden">
+    <section className="animate-fadeIn relative bg-[#FDFDFD] text-[#1C1C1C] min-h-screen flex flex-col px-6 md:px-[300px] pt-[250px] md:pb-[100px] overflow-hidden">
 
       {/* Profilbild */}
       <img
@@ -90,7 +90,7 @@ const Hero = () => {
           <a
             href="/cv-jerker-danielsson.pdf"
             download
-            className="border-2 border-[#1C1C1C] text-[#1C1C1C] mt-10 bg-white h-[44px] px-4 w-fit rounded-full text-[32px] md:text-[44px] font-medium tracking-tight flex items-center justify-center transition-all duration-300 hover:bg-[#1C1C1C] hover:text-white"
+            className="border-2 border-[#1C1C1C] text-[#1C1C1C] mt-10 bg-white h-[44px] px-4 w-fit rounded-full text-[24px] md:text-[44px] font-medium tracking-tight flex items-center justify-center transition-all duration-300 hover:bg-[#1C1C1C] hover:text-white"
             style={{ fontFamily: "Helvetica, sans-serif" }}
           >
             DOWNLOAD MY CV
