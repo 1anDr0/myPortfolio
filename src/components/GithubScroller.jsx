@@ -32,7 +32,7 @@ const GithubScroller = () => {
 
       {/* Vertikal text precis som BACK-knappen */}
       <span
-        className="text-black text-[14px] md:text-[16px] tracking-[+0.40em] tracking-widest rotate-[-90deg] origin-center hover:opacity-50 mt-20"
+        className="text-black text-[24px]  md:text-[24px] tracking-widest rotate-[-90deg] tracking-[+0.20em] origin-center hover:opacity-50 mt-20"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
         MY GITHUB
