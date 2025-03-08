@@ -53,10 +53,10 @@ const Hero = () => {
         </span>
       </h1>
 
-      <h2 className="text-[28px] md:text-[48px] font-light leading-[100%] tracking-[-0.07em] mt-4 z-10">
+      <h2 className="text-[20px] md:text-[48px] font-light leading-[100%] tracking-[-0.07em] mt-4 z-10">
         STUDENT @ JENSEN EDUCATION
       </h2>
-      <h3 className="text-[28px] md:text-[48px] font-light leading-[100%] tracking-[-0.07em] mt-2 z-10">
+      <h3 className="text-[20px] md:text-[48px] font-light leading-[100%] tracking-[-0.07em] mt-2 z-10">
         (FRONT-END DEVELOPER)
       </h3>
 
