@@ -42,7 +42,7 @@ const SeekingLIASection = () => {
           </p>
           <div className="mt-10">
         <button
-          className="border-2 border-white text-white bg-[#1C1C1C] h-[44px] px-[20px] rounded-full text-[32px] md:text-[44px] font-medium tracking-tight flex items-center justify-center gap-3 transition-all duration-300 hover:bg-white hover:text-[#1C1C1C]"
+          className="border-2 border-white text-white bg-[#1C1C1C] h-[44px] px-[20px] rounded-full text-[24px] md:text-[44px] font-medium tracking-tight flex items-center justify-center gap-3 transition-all duration-300 hover:bg-white hover:text-[#1C1C1C]"
           style={{ fontFamily: "Helvetica, sans-serif" }}
         >
           COVER LETTER <FiDownload className="w-8 h-8 md:w-10 md:h-10" />
