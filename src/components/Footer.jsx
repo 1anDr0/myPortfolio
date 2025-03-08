@@ -1,93 +1,98 @@
 import React, { useState } from "react";
 import { FiArrowDownLeft } from "react-icons/fi";
-import { Icon } from "@iconify/react";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <section className="bg-white text-[#1C1C1C] py-20 px-6 md:px-[300px]">
-      
-      {/* Namn */}
-      <h1
-        className="text-[72px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full mb-10"
-        style={{ fontFamily: "Helvetica, sans-serif" }}
-      >
-        Jerker Danielsson
-      </h1>
+    <>
+      <section className="bg-[#1C1C1C] text-white py-8 px-6 md:px-[500px]">
+        {/* Huvudrubrik */}
+        <h1 className="text-[36px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full mb-6">
+          Let's Connect
+        </h1>
 
-      {/* Kontakt-knapp */}
-      <div className="w-full border-t border-b border-bg-[#1C1C1C]">
-        <button
-          className="w-full flex justify-between items-center py-1 text-[32px] font-medium tracking-[-0.05em] cursor-pointer"
-          style={{ fontFamily: "Helvetica, sans-serif" }}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <span>Contact</span>
-          <span
-            className={`text-[48px] transform transition-transform duration-500 ${
-              isOpen ? "rotate-45" : "rotate-0"
+        <div className="w-full border-t border-b border-white">
+          {/* Klickbar knapp */}
+          <button
+            className="w-full flex justify-between items-center py-1 text-[20px] md:text-[24px] font-medium tracking-[-0.05em] cursor-pointer"
+            style={{ fontFamily: "Helvetica, sans-serif" }}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <span>Jerker Danielsson</span>
+            <span
+              className={`text-[36px] md:text-[48px] transform transition-transform duration-500 ${
+                isOpen ? "rotate-[-45deg]" : "rotate-0"
+              }`}
+            >
+              <FiArrowDownLeft />
+            </span>
+          </button>
+
+          {/* Kontaktinformation + Location */}
+          <div
+            className={`overflow-hidden transition-all duration-500 ease-in-out ${
+              isOpen ? "max-h-[500px] opacity-100 py-10 md:py-20" : "max-h-0 opacity-0"
             }`}
           >
-            <FiArrowDownLeft />
-          </span>
-        </button>
+            <div className="w-full">
+              {/* Kontaktinformation */}
+              <div className="flex flex-col md:flex-row justify-between text-[16px] md:text-[20px] font-medium tracking-[-0.07em]">
+                {/* Vänster sida (E-post, telefon) */}
+                <div className="text-left">
+                  <div className="flex items-center space-x-4 md:space-x-6">
+                    <FaEnvelope className="w-5 h-5 md:w-6 md:h-6" />
+                    <span>jerker_danielsson@hotmail.com</span>
+                  </div>
+                  <div className="flex items-center space-x-4 md:space-x-6 mt-4">
+                    <FaPhone className="w-5 h-5 md:w-6 md:h-6" />
+                    <span>073-992 97 98</span>
+                  </div>
+                </div>
 
-        {/* Kontaktinfo */}
-        <div
-          className={`overflow-hidden transition-all duration-500 ease-in-out ${
-            isOpen ? "max-h-[1000px] opacity-100 py-10" : "max-h-0 opacity-0"
-          }`}
-        >
-          <div className="flex flex-col text-[20px] font-light space-y-6">
+                {/* Höger sida (LinkedIn & GitHub) */}
+                <div className="mt-10 md:mt-0 md:absolute md:right-[300px] md:w-[500px]">
+                  <a
+                    href="https://linkedin.com/in/jerkerdanielsson"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-4 md:space-x-6 text-[16px] md:text-[20px] font-medium tracking-[-0.05em] hover:opacity-70"
+                  >
+                    <FaLinkedin className="w-5 h-5 md:w-6 md:h-6" />
+                    <span>LinkedIn</span>
+                  </a>
+                  <a
+                    href="https://github.com/1anDr0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-4 md:space-x-6 text-[16px] md:text-[20px] font-medium tracking-[-0.05em] hover:opacity-70 mt-4"
+                  >
+                    <FaGithub className="w-5 h-5 md:w-6 md:h-6" />
+                    <span>Github</span>
+                  </a>
+                </div>
+              </div>
 
-            <div className="flex items-center space-x-4">
-              <Icon icon="mdi:email-outline" width="24" height="24" />
-              <a href="mailto:jerker_danielsson@hotmail.com" className="underline">
-                jerker_danielsson@hotmail.com
-              </a>
+              {/* Location längst ner vid linjen */}
+              <div className="w-full flex justify-between items-center font-medium mt-10 md:mt-2">
+                <div className="flex items-center space-x-4 md:space-x-6 text-[20px]">
+                  <FaMapMarkerAlt className="w-5 h-5 md:w-6 md:h-6" />
+                  <span>Stockholm</span>
+                </div>
+              </div>
             </div>
-
-            <div className="flex items-center space-x-4">
-              <Icon icon="mdi:phone-outline" width="24" height="24" />
-              <a href="tel:+46739929798" className="underline">
-                073-992 97 98
-              </a>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <Icon icon="mdi:map-marker-outline" width="24" height="24" />
-              <span>Stockholm, Sweden</span>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <Icon icon="mdi:linkedin" width="24" height="24" />
-              <a
-                href="https://linkedin.com/in/jerkerdanielsson"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline"
-              >
-                LinkedIn
-              </a>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <Icon icon="mdi:github" width="24" height="24" />
-              <a
-                href="https://github.com/1anDr0"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline"
-              >
-                GitHub
-              </a>
-            </div>
-
           </div>
         </div>
+      </section>
+
+      {/* Designed by Jerker Danielsson - Separat avslutande sektion */}
+      <div className="bg-[#1C1C1C] text-white py-4 text-center md:text-end md:pr-[500px]">
+        <p className="text-[16px] md:text-[20px] font-light tracking-[-0.05em] opacity-70">
+          Designed & built by Jerker Danielsson
+        </p>
       </div>
-    </section>
+    </>
   );
 };
 

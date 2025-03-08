@@ -11,13 +11,13 @@ const MySkills = () => {
   return (
     <section className="bg-[#D9CAB3] text-[#1C1C1C] py-6 px-6 md:pl-[300px] md:pr-[780px] pb-[200px]">
 
-      <h1 className="text-[48px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full" style={{ fontFamily: "Helvetica, sans-serif" }}>
+      <h1 className="text-[36px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full" style={{ fontFamily: "Helvetica, sans-serif" }}>
         My skills /experience
       </h1>
 
       <div className="w-full border-t border-b border-[#1C1C1C] mt-10">
         <button
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-medium tracking-[-0.05em] cursor-pointer"
+          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[24px] font-medium tracking-[-0.05em] cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
           onClick={() => setIsOpenFrontend(!isOpenFrontend)}
         >
@@ -27,7 +27,7 @@ const MySkills = () => {
           </span>
         </button>
         <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenFrontend ? "max-h-[1000px] opacity-100 py-6" : "max-h-0 opacity-0"}`}>
-          <div className="text-[32px] md:text-[72px] font-[#1C1C1C] leading-[150%] tracking-[-0.07em] flex flex-col space-y-4">
+          <div className="text-[32px] md:text-[72px] font-[#1C1C1C] font-bold leading-[150%] tracking-[-0.07em] flex flex-col space-y-4">
             <div className="flex justify-between w-full transition-transform duration-1000 ease-out hover:translate-x-[-10px]">
               <span>HTML,</span>
               <span>CSS,</span>
@@ -60,7 +60,7 @@ const MySkills = () => {
 
       <div className="w-full border-t border-b border-[#1C1C1C] mt-12">
         <button
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-medium tracking-[-0.05em] cursor-pointer"
+          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[24px] font-medium tracking-[-0.05em] cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
           onClick={() => setIsOpenDesign(!isOpenDesign)}
         >
@@ -68,7 +68,7 @@ const MySkills = () => {
           <span>Design</span>
         </button>
         <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenDesign ? "max-h-[1000px] opacity-100 py-6" : "max-h-0 opacity-0"}`}>
-          <div className="text-[32px] md:text-[72px] font-[#1C1C1C] leading-[150%] tracking-[-0.07em] flex flex-col space-y-4">
+          <div className="text-[32px] md:text-[72px] font-[#1C1C1C] font-bold leading-[150%] tracking-[-0.07em] flex flex-col space-y-4">
             <div className="flex justify-between w-full transition-transform duration-1000 ease-out hover:translate-x-[-10px]">
               <span>Figma,</span>
               <span>Miro,</span>

@@ -23,7 +23,7 @@ const StuffIveDone = () => {
   return (
     <section className="relative bg-[#FFF5E4] text-[#1C1C1C] py-8 px-6 md:pl-[300px] md:pr-[700px] pb-[200px]">
       <h2
-        className="text-[48px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full mb-10"
+        className="text-[36px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full mb-10"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
         Stuff I've Done Professionally
@@ -32,13 +32,13 @@ const StuffIveDone = () => {
       <div className="w-full max-w-[800px] border-t border-b border-black">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[32px] font-medium tracking-[-0.05em] cursor-pointer"
+          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[24px] font-medium tracking-[-0.05em] cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
         >
           <span>YouTube</span>
           <span
             className={`text-[32px] md:text-[48px] transform transition-transform duration-500 ${
-              isOpen ? "rotate-45" : "rotate-0"
+              isOpen ? "rotate-[-45deg]" : "rotate-0"
             }`}
           >
             <FiArrowDownLeft />
