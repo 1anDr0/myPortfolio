@@ -7,7 +7,7 @@ const GithubScroller = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setShowBadge(scrollY > 1400 && scrollY < 5000);
+      setShowBadge(scrollY > 1600 && scrollY < 5000);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -16,7 +16,7 @@ const GithubScroller = () => {
 
   return (
     <div
-      className={`fixed left-[10px] top-[150px] z-50 flex flex-col items-center transition-opacity duration-500 ease-in-out ${
+      className={`fixed left-[60px] top-[150px] z-50 flex flex-col items-center transition-opacity duration-500 ease-in-out ${
         showBadge ? "opacity-100" : "opacity-0"
       } hidden md:flex`}
     >
