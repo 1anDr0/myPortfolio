@@ -9,6 +9,7 @@ import Quote from "./components/Qoute";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import GithubScroller from "./components/GithubScroller";
+import EmailScroller from "./components/EmailScroller";
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <Quote/>
       <Footer/>
       <ScrollToTop/>
+      <EmailScroller/>
     </div>
   );
 }

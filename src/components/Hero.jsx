@@ -11,7 +11,7 @@ const Hero = () => {
 
   return (
     <section
-      className={`animate-fadeIn relative bg-[#FDFDFD] text-[#1C1C1C] min-h-screen flex flex-col px-6 md:px-[300px] pt-[140px] md:pt-[240px] transition-all duration-500 ${
+      className={`bg-[#FDFDFD] text-[#1C1C1C] min-h-screen flex flex-col px-6 md:px-[300px] pt-[140px] md:pt-[240px] transition-all duration-500 ${
         isOpenCV ? "pb-[300px]" : "pb-[100px]"
       }`}
     >
@@ -49,7 +49,7 @@ const Hero = () => {
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
         <span className="group-hover:opacity-0 transition-opacity duration-1000 ease-in-out">
-          Hey! I’m Jerka Danielsson.
+          Hey! I’m Jerker Danielsson.
         </span>
         <span className="absolute left-0 top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-in-out">
           Hej! Jag heter Jerker Danielsson.
@@ -64,9 +64,9 @@ const Hero = () => {
       </h3>
 
       {/* COVER LETTER SEKTION */}
-      <div className="w-full max-w-[780px] border-t border-b border-[#1C1C1C] mt-6 z-30">
+      <div className="w-full max-w-[780px] border-t border-b border-[#1C1C1C] mt-8 z-30">
         <button
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[24px] font-medium tracking-[-0.05em] tracking-tight cursor-pointer"
+          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[28px] font-medium tracking-[-0.05em] tracking-tight cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
           onClick={() => setIsOpenCV(!isOpenCV)}
         >

@@ -21,9 +21,9 @@ const StuffIveDone = () => {
   };
 
   return (
-    <section className="relative bg-[#FFF5E4] text-[#1C1C1C] py-8 px-6 md:pl-[300px] md:pr-[700px] pb-[200px]">
+    <section className="relative bg-[#FFF5E4] text-[#1C1C1C] py-8 px-6 md:pl-[300px] md:pr-[780px] pb-[200px]">
       <h2
-        className="text-[36px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full mb-10"
+        className="text-[36px] md:text-[72px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full mb-10"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
         Stuff I've Done Professionally

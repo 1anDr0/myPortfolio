@@ -11,7 +11,7 @@ const MySkills = () => {
   return (
     <section className="bg-[#D9CAB3] text-[#1C1C1C] py-6 px-6 md:pl-[300px] md:pr-[780px] pb-[200px]">
 
-      <h1 className="text-[36px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full" style={{ fontFamily: "Helvetica, sans-serif" }}>
+      <h1 className="text-[36px] md:text-[72px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full" style={{ fontFamily: "Helvetica, sans-serif" }}>
         My skills /experience
       </h1>
 
@@ -58,7 +58,7 @@ const MySkills = () => {
         </div>
       </div>
 
-      <div className="w-full border-t border-b border-[#1C1C1C] mt-12">
+      <div className="w-full border-b border-[#1C1C1C] mt-0">
         <button
           className="w-full flex justify-between items-center py-1 text-[20px] md:text-[24px] font-medium tracking-[-0.05em] cursor-pointer"
           style={{ fontFamily: "Helvetica, sans-serif" }}
