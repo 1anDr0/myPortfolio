@@ -9,7 +9,7 @@ const GithubScroller = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY || 0;
       setScrollPos(scrollY); // Uppdatera state för att debugga
-      setShowBadge(scrollY > 1600 && scrollY < 5000);
+      setShowBadge(scrollY > 1600 && scrollY < 3000);
     };
 
     window.addEventListener("scroll", handleScroll);
