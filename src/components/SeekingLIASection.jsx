@@ -5,7 +5,9 @@ const SeekingLIASection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="bg-[#1C1C1C] text-white py-6 px-6 flex flex-col justify-start items-start mt-[-170px] md:pl-[780px] md:pr-[300px] pb-[200px] transform -translate-y-[0px]">
+    <section className="bg-white text-[#1C1C1C] py-6 px-6 flex flex-col justify-start items-start 
+  -mt-[80px] sm:-mt-[100px] md:-mt-[140px] lg:-mt-[160px] xl:-mt-[180px]
+  md:pl-[780px] md:pr-[300px] pb-[200px] z-30 relative">
       <h1
         className="text-[36px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full"
         style={{ fontFamily: "Helvetica, sans-serif" }}

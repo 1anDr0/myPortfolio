@@ -7,7 +7,7 @@ const EmailScroller = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setShowBadge(scrollY > 800 && scrollY < 5000);
+      setShowBadge(scrollY > 200 && scrollY < 5000);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -30,15 +30,15 @@ const EmailScroller = () => {
         onClick={copyToClipboard}
         className="hover:opacity-70 transition-opacity duration-300"
       >
-        <IoCopy className="w-8 h-8 md:w-6 md:h-6 text-white" />
+        <IoCopy className="w-8 h-8 md:w-6 md:h-6 text-[#1C1C1C]" />
       </button>
 
       {/* Vertikal text (likt MY GITHUB) */}
       <span
-        className="text-white text-[24px] md:text-[16px] font-bold tracking-widest rotate-[-90deg] tracking-[+0.20em] origin-center hover:opacity-50 mt-20"
+        className="text-[#1C1C1C] text-[24px] md:text-[16px] font-bold tracking-widest rotate-[-90deg] tracking-[+0.20em] origin-center hover:opacity-50 mt-18"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
-        MY EMAIL
+        MY EMAIL // COPY HERE
       </span>
     </div>
   );
