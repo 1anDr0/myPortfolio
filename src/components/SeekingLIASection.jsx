@@ -1,61 +1,47 @@
 import React, { useState } from "react";
 import { FiDownload, FiArrowDownLeft } from "react-icons/fi";
+import "../styles/SeekingLIA.css";
 
 const SeekingLIASection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="bg-white text-[#1C1C1C] py-6 px-6 flex flex-col justify-start items-start 
-  -mt-[80px] sm:-mt-[100px] md:-mt-[140px] lg:-mt-[160px] xl:-mt-[180px]
-  md:pl-[780px] md:pr-[300px] pb-[200px] z-30 relative">
-      <h1
-        className="text-[36px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full"
-        style={{ fontFamily: "Helvetica, sans-serif" }}
-      >
-        Seeking LIA /internship from November 2025/11/04
-      </h1>
+    <section className="lia-section">
+      <div className="lia-wrapper">
+        <h1 className="lia-heading">
+          Seeking LIA /internship from November 2025/11/04
+        </h1>
 
-      <div className="w-full max-w-[1000px] border-t border-b border-white mt-6">
-        <button
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[24px] font-medium tracking-[-0.05em] tracking-tight cursor-pointer"
-          style={{ fontFamily: "Helvetica, sans-serif" }}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <span>About me</span>
-          <span className={`text-[32px] md:text-[48px] transform transition-transform duration-500 ${isOpen ? 'rotate-[-45deg]' : 'rotate-0'}`}><FiArrowDownLeft /></span>
-        </button>
+        <div className="lia-box">
+          <button className="lia-toggle" onClick={() => setIsOpen(!isOpen)}>
+            <span>About me</span>
+            <span className={`lia-icon ${isOpen ? "open" : ""}`}>
+              <FiArrowDownLeft />
+            </span>
+          </button>
 
-        <div
-          className={`overflow-hidden transition-all duration-500 ease-in-out ${
-            isOpen ? "max-h-[600px] opacity-100 py-5" : "max-h-0 opacity-0"
-          }`}
-        >
-          <p
-            className="text-[16px] md:text-[20px] font-regular leading-[1.5] max-w-[780px]"
-            style={{ fontFamily: "Helvetica, sans-serif" }}
-          >
-            I’m a frontend developer with a strong passion for layout and design.
-            Originally from Rättvik, Dalarna, I’ve been living in Stockholm for over
-            10 years. I thrive on creating modern, intuitive, and visually appealing
-            interfaces that enhance user experience. With a keen eye for detail, I
-            focus on clean layouts, thoughtful UI components, and seamless
-            responsiveness. I’m always exploring new trends in web design to refine
-            my craft, ensuring that my work balances aesthetics with functionality.
-          </p>
-          <div className="mt-10">
-        <button
-          className="border-2 border-white text-[#1C1C1C] bg-white h-[44px] px-[20px] rounded-full text-[24px] md:text-[44px] font-medium tracking-tight flex items-center justify-center gap-3 transition-all duration-300 hover:bg-[#1C1C1C] hover:text-white"
-          style={{ fontFamily: "Helvetica, sans-serif" }}
-        >
-          COVER LETTER <FiDownload className="w-6 h-6 md:w-10 md:h-10" />
-        </button>
-      </div>
+          <div className={`lia-content ${isOpen ? "open" : ""}`}>
+            <p className="lia-text">
+              I’m a frontend developer with a strong passion for layout and design.
+              Originally from Rättvik, Dalarna, I’ve been living in Stockholm for over
+              10 years. I thrive on creating modern, intuitive, and visually appealing
+              interfaces that enhance user experience. With a keen eye for detail, I
+              focus on clean layouts, thoughtful UI components, and seamless
+              responsiveness. I’m always exploring new trends in web design to refine
+              my craft, ensuring that my work balances aesthetics with functionality.
+            </p>
+
+            <div className="lia-button-wrapper">
+              <button className="lia-download-btn">
+                COVER LETTER <FiDownload className="lia-download-icon" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-
-      
     </section>
   );
 };
 
 export default SeekingLIASection;
+

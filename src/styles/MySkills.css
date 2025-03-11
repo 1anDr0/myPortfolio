@@ -1,0 +1,132 @@
+.skills-section {
+  background-color: #BAD8B6;
+  color: #1C1C1C;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  padding-left: 300px; /* ✅ Vänstermarginal */
+  padding-right: 4rem;
+  width: 100%;
+}
+
+.skills-heading {
+  font-family: Helvetica, sans-serif;
+  font-size: clamp(28px, 6vw, 72px);
+  font-weight: bold;
+  letter-spacing: -0.07em;
+  line-height: 1.1;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.skills-box {
+  width: 100%;
+  max-width: 800px; /* ✅ kortare knappar */
+  border-top: 1px solid #1C1C1C;
+  border-bottom: 1px solid #1C1C1C;
+  margin-bottom: 1rem;
+}
+
+.skills-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  font-size: clamp(20px, 3vw, 32px);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  padding: 1rem 0;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.skills-icon {
+  font-size: clamp(28px, 4vw, 48px);
+  transition: transform 0.5s ease;
+}
+
+.skills-icon.open {
+  transform: rotate(-45deg);
+}
+.skills-icon.right.open {
+  transform: rotate(45deg);
+}
+
+.skills-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.skills-content.open {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 2rem 0;
+}
+
+.skills-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: clamp(20px, 4vw, 48px);
+  font-weight: bold;
+  letter-spacing: -0.07em;
+}
+
+.tag-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  transition: transform 0.5s ease;
+}
+.tag-row:hover {
+  transform: translateX(-10px);
+}
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  font-size: clamp(28px, 3vw, 44px);
+}
+
+/* RESPONSIVITET */
+
+@media (max-width: 1536px) {
+  .skills-section {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+@media (max-width: 1280px) {
+  .skills-section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .skills-section {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 6rem 2rem 8rem;
+  }
+}
+@media (max-width: 640px) {
+  .skills-section {
+    padding: 4rem 1.5rem 6rem;
+  }
+  .skills-tags {
+    font-size: 20px;
+  }
+  .skills-icons {
+    font-size: 24px;
+  }
+}

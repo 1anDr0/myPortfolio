@@ -1,110 +1,53 @@
 import React, { useState } from "react";
 import { FiArrowDownLeft, FiDownload } from "react-icons/fi";
 import { FaCode, FaPaintBrush } from "react-icons/fa";
+import { MdOutlineSportsVolleyball } from "react-icons/md";
 import dalahorseImage from "../assets/Dalecarlian_horse.svg.png";
 import rectangleImage from "../assets/Rectangle.png";
 import figmaImage from "../assets/me.jpg";
-import { MdOutlineSportsVolleyball } from "react-icons/md";
+import "../styles/Hero.css";
 
 const Hero = () => {
   const [isOpenCV, setIsOpenCV] = useState(false);
 
   return (
-    <section className="relative bg-[#FDFDFD] text-[#1C1C1C] min-h-screen flex flex-col 
-      px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 2xl:px-[300px] 
-      pt-[80px] sm:pt-[120px] md:pt-[160px] lg:pt-[250px] 
-      pb-[80px] sm:pb-[120px] md:pb-[160px] lg:pb-[200px] 
-      transition-all duration-500">
+    <section className="hero-section">
+      <div className="hero-icons">
+        <div className="icon-row">
+          <img src={dalahorseImage} alt="Dalahäst" className="icon-img" />
+          <MdOutlineSportsVolleyball className="icon" />
+          <FaPaintBrush className="icon" />
+          <FaCode className="icon" />
+        </div>
+        <div className="icon-line" />
+      </div>
 
-         
+      <img src={rectangleImage} alt="Blur Overlay 1" className="rectangle top" />
+      <img src={rectangleImage} alt="Blur Overlay 2" className="rectangle bottom" />
 
-<div className="hidden md:flex flex-col space-y-4 z-10 text-[14px] md:text-[18px] lg:text-[20px] absolute top-[100px] left-4 sm:left-6 md:left-10 lg:left-16 xl:left-24 2xl:left-[300px]">
-  <div className="flex space-x-2 md:space-x-3">
-    <img src={dalahorseImage} alt="Dalahäst" className="w-[14px] sm:w-[16px] md:w-[20px] lg:w-[24px] object-contain" />
-    <MdOutlineSportsVolleyball className="w-[14px] sm:w-[16px] md:w-[20px] lg:w-[24px]" />
-    <FaPaintBrush className="w-[14px] sm:w-[16px] md:w-[20px] lg:w-[24px]" />
-    <FaCode className="w-[14px] sm:w-[16px] md:w-[20px] lg:w-[24px]" />
-  </div>
-  <div className="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] h-[2px] bg-[#1C1C1C] animate-fadeInSlow"></div>
-</div>
+      <img src={figmaImage} alt="Jerker Danielsson" className="hero-profile" />
 
-  {/* Profilbild för desktop */}
-  <img
-          src={figmaImage}
-          alt="Jerker Danielsson"
-          className="w-[240px] sm:w-[260px] md:w-[300px] lg:w-[360px] xl:w-[400px] 
-            h-auto object-cover rounded-full hover:scale-105 transition-transform duration-500 
-            md:absolute md:right-2 sm:md:right-0 md:right-0 lg:right-2 xl:right-10 2xl:md:right-[260px] 
-            md:top-[120px] mx-auto mt-0"
-        />
+      <div className="hero-text">
+        <h1 className="hero-title group">
+          <span className="title-en">Hey! I’m Jerker Danielsson.</span>
+          <span className="title-sv">Hej! Jag heter Jerker Danielsson.</span>
+        </h1>
+        <h2 className="hero-subtitle">STUDENT @ JENSEN EDUCATION</h2>
+        <h3 className="hero-subtitle">(FRONT-END DEVELOPER)</h3>
+      </div>
 
-      {/* Rektanglar för desktop */}
-      <img
-        src={rectangleImage}
-        alt="Blur Overlay 1"
-        className="absolute top-0 left-0 w-full h-[240px] md:h-[280px] lg:h-[320px] z-30 hover:opacity-20 transition-opacity duration-1000"
-      />
-      <img
-        src={rectangleImage}
-        alt="Blur Overlay 2"
-        className="absolute top-[100px] md:top-[260px] left-0 w-full h-[400px] md:h-[440px] lg:h-[400px] z-30 hover:opacity-20 transition-opacity duration-1000"
-      />
-
-{/* Titlar */}
-
-{/* Titlar och knapp-wrapper */}
-<div className="w-full md:w-1/2 flex flex-col items-start justify-start space-y-4 mt-8 md:mt-[60px] lg:mt-0">
-
-  <h1
-  
-      className="font-bold tracking-[-0.07em] leading-[100%] z-50 group relative text-left whitespace-nowrap"
-
-    style={{
-      fontFamily: "Helvetica, sans-serif",
-      fontSize: "clamp(20px, 4vw, 60px)",
-      paddingBottom: "0.5rem"
-    }}
-  >
-    <span className="group-hover:opacity-0 transition-opacity duration-1000 z-50">
-      Hey! I’m Jerker Danielsson.
-    </span>
-    <span className="absolute left-0 top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
-      Hej! Jag heter Jerker Danielsson.
-    </span>
-  </h1>
-
-  <h2 className="text-[12px] sm:text-[14px] md:text-[20px] lg:text-[28px] xl:text-[34px] font-light leading-[100%] tracking-[-0.07em] z-10">
-    STUDENT @ JENSEN EDUCATION
-  </h2>
-  <h3 className="text-[12px] sm:text-[14px] md:text-[20px] lg:text-[28px] xl:text-[34px] font-light leading-[100%] tracking-[-0.07em] z-10">
-    (FRONT-END DEVELOPER)
-  </h3>
-</div>
-      {/* CV-knapp och innehåll */}
-      <div className="w-full max-w-[780px] border-t border-b border-[#1C1C1C] mt-8 z-30">
-        <button
-          className="w-full flex justify-between items-center py-2 text-[16px] sm:text-[18px] md:text-[22px] lg:text-[26px] font-medium tracking-[-0.05em] cursor-pointer"
-          onClick={() => setIsOpenCV(!isOpenCV)}
-        >
+      {/* ✅ CV-knapp som öppnar innehåll */}
+      <div className="cv-box">
+        <button className="cv-button" onClick={() => setIsOpenCV(!isOpenCV)}>
           <span>CV</span>
-          <span
-            className={`text-[24px] sm:text-[28px] md:text-[36px] lg:text-[40px] transform transition-transform duration-500 ${
-              isOpenCV ? "rotate-[-45deg]" : "rotate-0"
-            }`}
-          >
+          <span className={`cv-icon ${isOpenCV ? "open" : ""}`}>
             <FiArrowDownLeft />
           </span>
         </button>
 
-        <div
-          className={`overflow-hidden transition-all duration-500 ease-in-out ${
-            isOpenCV ? "max-h-[1000px] opacity-100 py-5" : "max-h-0 opacity-0"
-          }`}
-        >
-          <p
-            className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-[1.5] max-w-[780px]"
-            style={{ fontFamily: "Helvetica, sans-serif" }}
-          >
+        {/* ✅ CV-innehåll inkl. download-knapp */}
+        <div className={`cv-content ${isOpenCV ? "open" : ""}`}>
+          <p className="cv-text">
             I’m a frontend developer with a strong passion for layout and design.
             Originally from Rättvik, Dalarna, I’ve been living in Stockholm for over
             10 years. I thrive on creating modern, intuitive, and visually appealing
@@ -114,6 +57,14 @@ const Hero = () => {
             my craft, ensuring that my work balances aesthetics with functionality.
           </p>
 
+          <a
+            href="/cv-jerker-danielsson.pdf"
+            download
+            className="cv-download-btn"
+          >
+            <FiDownload className="cv-download-icon" />
+            Download my CV
+          </a>
         </div>
       </div>
     </section>
@@ -121,6 +72,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
 
