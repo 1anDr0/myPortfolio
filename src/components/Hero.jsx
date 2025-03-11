@@ -16,16 +16,26 @@ const Hero = () => {
       pb-[80px] sm:pb-[120px] md:pb-[160px] lg:pb-[200px] 
       transition-all duration-500">
 
-     
+         
 
-      {/* Profilbild för desktop */}
-      <img
+<div className="hidden md:flex flex-col space-y-4 z-10 text-[14px] md:text-[18px] lg:text-[20px] absolute top-[100px] left-4 sm:left-6 md:left-10 lg:left-16 xl:left-24 2xl:left-[300px]">
+  <div className="flex space-x-2 md:space-x-3">
+    <img src={dalahorseImage} alt="Dalahäst" className="w-[14px] sm:w-[16px] md:w-[20px] lg:w-[24px] object-contain" />
+    <MdOutlineSportsVolleyball className="w-[14px] sm:w-[16px] md:w-[20px] lg:w-[24px]" />
+    <FaPaintBrush className="w-[14px] sm:w-[16px] md:w-[20px] lg:w-[24px]" />
+    <FaCode className="w-[14px] sm:w-[16px] md:w-[20px] lg:w-[24px]" />
+  </div>
+  <div className="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] h-[2px] bg-[#1C1C1C] animate-fadeInSlow"></div>
+</div>
+
+  {/* Profilbild för desktop */}
+  <img
           src={figmaImage}
           alt="Jerker Danielsson"
-          className="w-[200px] sm:w-[260px] md:w-[300px] lg:w-[360px] xl:w-[400px] 
+          className="w-[240px] sm:w-[260px] md:w-[300px] lg:w-[360px] xl:w-[400px] 
             h-auto object-cover rounded-full hover:scale-105 transition-transform duration-500 
-            md:absolute md:right-2 sm:md:right-4 md:right-8 lg:right-12 xl:right-20 2xl:md:right-[280px] 
-            md:top-[120px] mx-auto"
+            md:absolute md:right-2 sm:md:right-0 md:right-0 lg:right-2 xl:right-10 2xl:md:right-[260px] 
+            md:top-[120px] mx-auto mt-0"
         />
 
       {/* Rektanglar för desktop */}
@@ -40,42 +50,36 @@ const Hero = () => {
         className="absolute top-[100px] md:top-[260px] left-0 w-full h-[400px] md:h-[440px] lg:h-[400px] z-30 hover:opacity-20 transition-opacity duration-1000"
       />
 
-      {/* Ikoner + linje */}
-      <div className="hidden md:flex flex-col space-y-4 z-10 text-[16px] md:text-[20px] lg:text-[24px] absolute top-[150px] left-4 sm:left-6 md:left-10 lg:left-16 xl:left-24 2xl:left-[300px]">
-        <div className="flex space-x-3 md:space-x-4">
-          <img src={dalahorseImage} alt="Dalahäst" className="w-[18px] sm:w-[20px] md:w-[24px] lg:w-[28px] object-contain" />
-          <MdOutlineSportsVolleyball className="w-[18px] sm:w-[20px] md:w-[24px] lg:w-[32px]" />
-          <FaPaintBrush className="w-[18px] sm:w-[20px] md:w-[24px] lg:w-[28px]" />
-          <FaCode className="w-[18px] sm:w-[20px] md:w-[24px] lg:w-[28px]" />
-        </div>
-        <div className="w-[100px] sm:w-[120px] md:w-[140px] lg:w-[160px] h-[2px] bg-[#1C1C1C] animate-fadeInSlow"></div>
-      </div>
+{/* Titlar */}
 
-      {/* Titlar */}
-      <div className="mt-[-0px]">
-        <h1
-          className="font-bold tracking-[-0.07em] leading-[100%] z-50 group relative text-left"
-          style={{
-            fontFamily: "Helvetica, sans-serif",
-            fontSize: "clamp(32px, 5.5vw, 72px)",
-            paddingBottom: "0.5rem"
-          }}
-        >
-          <span className="group-hover:opacity-0 transition-opacity duration-1000 z-50">
-            Hey! I’m Jerker Danielsson.
-          </span>
-          <span className="absolute left-0 top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
-            Hej! Jag heter Jerker Danielsson.
-          </span>
-        </h1>
+{/* Titlar och knapp-wrapper */}
+<div className="w-full md:w-1/2 flex flex-col items-start justify-start space-y-4 mt-8 md:mt-[60px] lg:mt-0">
 
-        <h2 className="text-[16px] sm:text-[18px] md:text-[28px] lg:text-[36px] xl:text-[44px] font-light leading-[100%] tracking-[-0.07em] mt-4 z-10">
-          STUDENT @ JENSEN EDUCATION
-        </h2>
-        <h3 className="text-[16px] sm:text-[18px] md:text-[28px] lg:text-[36px] xl:text-[44px] font-light leading-[100%] tracking-[-0.07em] mt-2 z-10">
-          (FRONT-END DEVELOPER)
-        </h3>
-      </div>
+  <h1
+  
+      className="font-bold tracking-[-0.07em] leading-[100%] z-50 group relative text-left whitespace-nowrap"
+
+    style={{
+      fontFamily: "Helvetica, sans-serif",
+      fontSize: "clamp(20px, 4vw, 60px)",
+      paddingBottom: "0.5rem"
+    }}
+  >
+    <span className="group-hover:opacity-0 transition-opacity duration-1000 z-50">
+      Hey! I’m Jerker Danielsson.
+    </span>
+    <span className="absolute left-0 top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+      Hej! Jag heter Jerker Danielsson.
+    </span>
+  </h1>
+
+  <h2 className="text-[12px] sm:text-[14px] md:text-[20px] lg:text-[28px] xl:text-[34px] font-light leading-[100%] tracking-[-0.07em] z-10">
+    STUDENT @ JENSEN EDUCATION
+  </h2>
+  <h3 className="text-[12px] sm:text-[14px] md:text-[20px] lg:text-[28px] xl:text-[34px] font-light leading-[100%] tracking-[-0.07em] z-10">
+    (FRONT-END DEVELOPER)
+  </h3>
+</div>
       {/* CV-knapp och innehåll */}
       <div className="w-full max-w-[780px] border-t border-b border-[#1C1C1C] mt-8 z-30">
         <button
@@ -110,14 +114,6 @@ const Hero = () => {
             my craft, ensuring that my work balances aesthetics with functionality.
           </p>
 
-          <div className="mt-10 ">
-            <button
-              className="border-2 border-black text-white bg-[#1C1C1C] h-[40px] sm:h-[44px] md:h-[48px] lg:h-[52px] px-[20px] sm:px-[24px] rounded-full text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] font-medium tracking-tight flex items-center justify-center gap-3 transition-all duration-300 hover:bg-white hover:text-[#1C1C1C]"
-              style={{ fontFamily: "Helvetica, sans-serif" }}
-            >
-              DOWNLOAD MY CV <FiDownload className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
-            </button>
-          </div>
         </div>
       </div>
     </section>

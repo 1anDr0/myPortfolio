@@ -12,7 +12,7 @@ const SeekingLIASection = () => {
         className="text-[36px] md:text-[128px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
-        Seeking LIA /internship from November 2025
+        Seeking LIA /internship from November 2025/11/04
       </h1>
 
       <div className="w-full max-w-[1000px] border-t border-b border-white mt-6">
@@ -21,7 +21,7 @@ const SeekingLIASection = () => {
           style={{ fontFamily: "Helvetica, sans-serif" }}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <span>Read my cover letter</span>
+          <span>About me</span>
           <span className={`text-[32px] md:text-[48px] transform transition-transform duration-500 ${isOpen ? 'rotate-[-45deg]' : 'rotate-0'}`}><FiArrowDownLeft /></span>
         </button>
 
