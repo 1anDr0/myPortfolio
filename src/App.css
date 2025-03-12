@@ -5,4 +5,77 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================== */
+/* GLOBAL LAYOUT + TYPOGRAFI     */
+/* ============================== */
 
+
+
+/* Standardcontainer – centrera innehåll & hantera spacing */
+.container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(24px, 12vw, 300px);
+  padding-right: clamp(24px, 12vw, 300px);
+}
+
+/* Sektion med extra luft upp/ner */
+.section-spacing {
+  padding-top: 250px;
+  padding-bottom: 200px;
+}
+
+@media (max-width: 1024px) {
+  .section-spacing {
+    padding-top: 180px;
+    padding-bottom: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-spacing {
+    padding-top: 140px;
+    padding-bottom: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-spacing {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+/* ============================== */
+/* GRUNDSTILAR / RESET           */
+/* ============================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #FDFDFD;
+  color: #1C1C1C;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

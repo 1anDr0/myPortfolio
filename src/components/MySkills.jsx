@@ -30,7 +30,7 @@ const MySkills = () => {
   const [isOpenDesign, setIsOpenDesign] = useState(false);
 
   return (
-    <section className="skills-section">
+    <section className="my-skills container section-spacing">
       <h1 className="skills-heading">My skills /experience</h1>
 
       {/* Frontend */}

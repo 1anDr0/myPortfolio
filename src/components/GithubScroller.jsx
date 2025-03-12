@@ -9,7 +9,7 @@ const GithubScroller = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY || 0;
       setScrollPos(scrollY); // Uppdatera state för att debugga
-      setShowBadge(scrollY > 1600 && scrollY < 3000);
+      setShowBadge(scrollY > 600 && scrollY < 3000);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -30,14 +30,14 @@ const GithubScroller = () => {
         rel="noopener noreferrer"
         className="hover:opacity-70 transition-opacity duration-300"
       >
-        <TbBrandGithubFilled className="w-6 h-6 md:w-8 md:h-8 text-black" />
+        <TbBrandGithubFilled className="w-6 h-6 md:w-8 md:h-8 text-black mb-24" />
       </a>
 
       <span
-        className="text-black text-[16px] md:text-[16px] font-bold tracking-widest rotate-[-90deg] tracking-[+0.20em] origin-center hover:opacity-50 mt-20"
+        className="text-black text-[16px] md:text-[16px] font-bold tracking-widest rotate-[-90deg] tracking-[+0.20em] origin-center hover:opacity-50"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
-        MY GITHUB
+        THIS IS MY GITHUB
       </span>
     </div>
     

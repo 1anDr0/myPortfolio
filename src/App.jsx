@@ -11,24 +11,23 @@ import ScrollToTop from "./components/ScrollToTop";
 import GithubScroller from "./components/GithubScroller";
 import EmailScroller from "./components/EmailScroller";
 
-
-
 function App() {
   return (
     <div className="bg-white min-h-screen">
-       <GithubScroller />
+      <GithubScroller />
       <Navbar />
       <Hero />
       <SeekingLIASection />
-      <MySkills/>
-      <MyProjects/>
-      <StuffIveDone/>
-      <Quote/>
-      <Footer/>
-      <ScrollToTop/>
-      <EmailScroller/>
+      <MySkills />
+      <MyProjects />
+      <StuffIveDone />
+      <Quote />
+      <Footer />
+      <ScrollToTop />
+      <EmailScroller />
     </div>
   );
 }
 
 export default App;
+

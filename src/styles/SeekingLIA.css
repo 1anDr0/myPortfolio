@@ -5,19 +5,19 @@
 .lia-section {
   background-color: white;
   color: #1C1C1C;
-  padding: 6rem 4rem 12rem;
   position: relative;
   width: 100%;
-  margin-top: -230px; /* du kan justera */
+  margin-top: -230px;
   z-index: 30;
-  min-height: 100vh; /* så sektionen fyller hela skärmen */
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 
 .lia-wrapper {
   max-width: 1000px;
   margin-left: auto;
-  padding-right: 300px;
+  margin-right: 0; /* valfritt – kan tas bort */
 }
 
 .lia-heading {
@@ -111,34 +111,8 @@
   height: 1.5em;
 }
 
-/* =================== */
-/* RESPONSIVE JUSTERINGAR */
-/* =================== */
-
-@media (max-width: 1536px) {
-  .lia-wrapper {
-    padding-right: 200px;
-  }
-}
-@media (max-width: 1280px) {
-  .lia-wrapper {
-    padding-right: 100px;
-  }
-}
-@media (max-width: 1024px) {
-  .lia-wrapper {
-    padding-right: 60px;
-  }
-}
-@media (max-width: 768px) {
-  .lia-section {
-    padding: 6rem 2rem 8rem;
-  }
-}
+/* RESPONSIV JUSTERING */
 @media (max-width: 640px) {
-  .lia-section {
-    padding: 4rem 1.5rem 6rem;
-  }
   .lia-text {
     font-size: 14px;
   }

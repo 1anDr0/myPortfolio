@@ -14,6 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <div className="navbar-container container">
       <div className={`navbar-container ${isOpen ? "open" : ""}`}>
         <div className="navbar-toggle" onClick={() => setIsOpen(!isOpen)}>
           <span className="navbar-title">This is what you need</span>
@@ -37,6 +38,7 @@ const Navbar = () => {
             <a href="#contact" className="nav-link">CONTACT</a>
           </div>
         </div>
+      </div>
       </div>
     </nav>
   );

@@ -1,11 +1,14 @@
+/* ======================= */
+/* MY SKILLS STYLING */
+/* ======================= */
+
 .skills-section {
   background-color: #BAD8B6;
   color: #1C1C1C;
-  padding-top: 6rem;
-  padding-bottom: 12rem;
-  padding-left: 300px; /* ✅ Vänstermarginal */
-  padding-right: 4rem;
   width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .skills-heading {
@@ -20,7 +23,7 @@
 
 .skills-box {
   width: 100%;
-  max-width: 800px; /* ✅ kortare knappar */
+  max-width: 800px;
   border-top: 1px solid #1C1C1C;
   border-bottom: 1px solid #1C1C1C;
   margin-bottom: 1rem;
@@ -49,6 +52,7 @@
 .skills-icon.open {
   transform: rotate(-45deg);
 }
+
 .skills-icon.right.open {
   transform: rotate(45deg);
 }
@@ -82,6 +86,7 @@
   gap: 1.5rem;
   transition: transform 0.5s ease;
 }
+
 .tag-row:hover {
   transform: translateX(-10px);
 }
@@ -95,34 +100,7 @@
 }
 
 /* RESPONSIVITET */
-
-@media (max-width: 1536px) {
-  .skills-section {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-}
-@media (max-width: 1280px) {
-  .skills-section {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
-@media (max-width: 1024px) {
-  .skills-section {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media (max-width: 768px) {
-  .skills-section {
-    padding: 6rem 2rem 8rem;
-  }
-}
 @media (max-width: 640px) {
-  .skills-section {
-    padding: 4rem 1.5rem 6rem;
-  }
   .skills-tags {
     font-size: 20px;
   }

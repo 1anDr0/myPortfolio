@@ -11,7 +11,9 @@ const Hero = () => {
   const [isOpenCV, setIsOpenCV] = useState(false);
 
   return (
-    <section className="hero-section">
+    <section className="hero-section container">
+       
+  
       <div className="hero-icons">
         <div className="icon-row">
           <img src={dalahorseImage} alt="Dalahäst" className="icon-img" />
