@@ -3,11 +3,10 @@
 /* ======================= */
 
 .lia-section {
-  background-color: white;
+  background-color: #FDFDFD;
   color: #1C1C1C;
   position: relative;
   width: 100%;
-  margin-top: -230px;
   z-index: 30;
   min-height: 100vh;
   display: flex;
@@ -15,6 +14,7 @@
 }
 
 .lia-wrapper {
+  padding-left: 200px;
   max-width: 1000px;
   margin-left: auto;
   margin-right: 0; /* valfritt – kan tas bort */
@@ -28,13 +28,15 @@
   letter-spacing: -0.07em;
   text-align: left;
   width: 100%;
+  margin-bottom: 20px;
+  margin-top: -20px
 }
-
 .lia-box {
   width: 100%;
   border-top: 1px solid #1C1C1C;
   border-bottom: 1px solid #1C1C1C;
-  margin-top: 2rem;
+  margin-top: 0rem; /* minskat mellanrum ovanför */
+  margin-bottom: 0rem; /* minskat mellanrum under */
 }
 
 .lia-toggle {
@@ -46,7 +48,7 @@
   font-size: clamp(18px, 3vw, 32px);
   font-weight: 500;
   letter-spacing: -0.05em;
-  padding: 0.8rem 0;
+  padding: 0.5rem 0;
   cursor: pointer;
   background: none;
   border: none;
@@ -107,8 +109,8 @@
 }
 
 .lia-download-icon {
-  width: 1.5em;
-  height: 1.5em;
+  width: 0.75em;
+  height: 0.75em;
 }
 
 /* RESPONSIV JUSTERING */

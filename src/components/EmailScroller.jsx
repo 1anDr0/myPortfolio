@@ -38,7 +38,7 @@ const EmailScroller = () => {
         className="text-[#1C1C1C] text-[24px] md:text-[16px] font-bold tracking-widest rotate-[-90deg] tracking-[+0.20em] origin-center hover:opacity-50 mt-20"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
-        MY EMAIL // COPY HERE
+        MY EMAIL  //  COPY HERE
       </span>
     </div>
   );
