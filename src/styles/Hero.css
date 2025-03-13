@@ -2,7 +2,7 @@
 
   .hero-section {
     position: relative;
-    background-color: #fdfdfd00;
+    background-color: #FBFBFB;
     color: #1C1C1C;
     min-height: auto;
     display: flex;
@@ -125,7 +125,7 @@
   }
 
   .cv-box {
-    max-width: 780px;
+    max-width: 800px;
     border-top: 1px solid #1C1C1C;
     border-bottom: 1px solid #1C1C1C;
     margin-top: 2rem;
@@ -173,7 +173,7 @@
   font-family: Helvetica, sans-serif;
   font-size: clamp(18px, 3vw, 24px);
   font-weight: bolder;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
   padding: 0rem 0;
   width: 100%;
   background: none;

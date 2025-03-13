@@ -6,7 +6,7 @@
   background-color: #fdfdfd00;
   color: #1C1C1C;
   padding-top: 6rem;
-  padding-bottom: 16rem;
+  padding-bottom: 20rem;
   padding-left: 120px;
   padding-right: 300px;
   width: 100%;
@@ -17,7 +17,7 @@
 
 .quote-text {
   font-family: Helvetica, sans-serif;
-  font-size: clamp(28px, 6vw, 72px);
+  font-size: clamp(36px, 6vw, 128px);
   font-weight: bold;
   font-style: italic;
   line-height: 1.1;
@@ -67,7 +67,7 @@
     padding-right: 1.5rem;
   }
   .quote-text {
-    font-size: clamp(24px, 6vw, 48px);
+    font-size: clamp(48px, 6vw, 72px);
   }
   .quote-author {
     font-size: 14px;

@@ -21,24 +21,24 @@ const EmailScroller = () => {
 
   return (
     <div
-      className={`fixed right-[0px] top-[150px] z-50 flex flex-col items-center transition-opacity duration-500 ease-in-out ${
-        showBadge ? "opacity-100" : "opacity-0"
-      } hidden md:flex`}
-    >
+    className={`fixed right-0 top-[150px] hidden lg:flex z-50 flex-col items-center transition-opacity duration-500 ease-in-out ${
+      showBadge ? "opacity-100" : "opacity-0"
+    }`}
+  >
       {/* Email kopiera-ikon */}
       <button
         onClick={copyToClipboard}
-        className="hover:opacity-70 transition-opacity duration-300 mb-12"
+        className="hover:opacity-70 translate-x-[22px] transition-opacity duration-300 mb-20"
       >
         <IoCopy className="w-8 h-8 md:w-6 md:h-6 text-[#1C1C1C]" />
       </button>
 
       {/* Vertikal text (likt MY GITHUB) */}
       <span
-        className="text-[#1C1C1C] text-[24px] md:text-[16px] font-bold tracking-widest rotate-[-90deg] tracking-[+0.20em] origin-center hover:opacity-50 mt-20"
+        className="text-[#1C1C1C] text-[18px] font-bold tracking-widest rotate-[-90deg] translate-x-[22px] tracking-[+0.20em] origin-center hover:opacity-50 mt-20"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
-        MY EMAIL  //  COPY HERE
+        MY EMAIL // COPY HERE
       </span>
     </div>
   );

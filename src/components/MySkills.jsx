@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiArrowDownLeft } from "react-icons/fi";
+import { FiArrowDownRight } from "react-icons/fi";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaFigma, FaPaintBrush } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import "../styles/MySkills.css";
@@ -40,13 +41,15 @@ const MySkills = () => {
       {/* Design */}
       <div className="skills-box">
         <button
+        
           className="skills-toggle"
           onClick={() => setIsOpenDesign(!isOpenDesign)}
         >
-          <span>Design</span>
+          
           <span className={`skills-icon ${isOpenDesign ? "open" : ""}`}>
-            <FiArrowDownLeft />
+            <FiArrowDownRight/>
           </span>
+          <span>Design</span>
         </button>
 
         <div className={`skills-content ${isOpenDesign ? "open" : ""}`}>

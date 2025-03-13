@@ -12,7 +12,7 @@ const Hero = () => {
 
   return (
     <section className="hero-section">
-      <div className="hero-icons">
+      {/* <div className="hero-icons">
         <div className="icon-row">
           <img src={dalahorseImage} alt="Dalahäst" className="icon-img" />
           <MdOutlineSportsVolleyball className="icon" />
@@ -20,7 +20,7 @@ const Hero = () => {
           <FaCode className="icon" />
         </div>
         <div className="icon-line" />
-      </div>
+      </div> */}
 
       <img src={rectangleImage} alt="Blur Overlay 1" className="rectangle top" />
       <img src={rectangleImage} alt="Blur Overlay 2" className="rectangle bottom" />
