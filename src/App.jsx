@@ -10,10 +10,13 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import GithubScroller from "./components/GithubScroller";
 import EmailScroller from "./components/EmailScroller";
+import "./styles/Background.css";
+
 
 function App() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="min-h-screen">
+      <div className="background-wrapper" />
       <GithubScroller />
       <Navbar />
       <Hero />

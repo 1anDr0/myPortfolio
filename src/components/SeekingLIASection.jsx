@@ -6,8 +6,7 @@ const SeekingLIASection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="seeking-lia container section-spacing">
-
+    <section className="lia-section">
       <div className="lia-wrapper">
         <h1 className="lia-heading">
           Seeking LIA /internship from November 2025/11/04

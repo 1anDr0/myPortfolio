@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { FiArrowDownLeft } from "react-icons/fi";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../styles/StuffIveDone.css";
 
 const StuffIveDone = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,40 +22,25 @@ const StuffIveDone = () => {
   };
 
   return (
-    <section className="relative bg-[#FFF5E4] text-[#1C1C1C] py-8 px-6 md:pl-[300px] md:pr-[780px] pb-[200px]">
-      <h2
-        className="text-[36px] md:text-[72px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full mb-10"
-        style={{ fontFamily: "Helvetica, sans-serif" }}
-      >
-        Stuff I've Done Professionally
-      </h2>
+    <section className="stuff-section">
+      <h2 className="stuff-heading">Stuff I've Done Professionally</h2>
 
-      <div className="w-full max-w-[800px] border-t border-b border-black">
+      <div className="stuff-box">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[24px] font-medium tracking-[-0.05em] cursor-pointer"
-          style={{ fontFamily: "Helvetica, sans-serif" }}
+          className="stuff-toggle"
         >
           <span>YouTube</span>
-          <span
-            className={`text-[32px] md:text-[48px] transform transition-transform duration-500 ${
-              isOpen ? "rotate-[-45deg]" : "rotate-0"
-            }`}
-          >
+          <span className={`stuff-icon ${isOpen ? "open" : ""}`}>
             <FiArrowDownLeft />
           </span>
         </button>
 
-        <div
-          className={`overflow-hidden transition-all duration-500 ease-in-out ${
-            isOpen ? "max-h-[1000px] opacity-100 py-6" : "max-h-0 opacity-0"
-          }`}
-        >
+        <div className={`stuff-content ${isOpen ? "open" : ""}`}>
           <div className="relative flex items-center justify-center">
             <button
               onClick={prevSlide}
-              className="absolute left-2 top-1/2 -translate-y-1/2 text-black text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50"
-              style={{ fontFamily: "Helvetica, sans-serif" }}
+              className="slider-nav left"
             >
               BACK
             </button>
@@ -97,8 +83,7 @@ const StuffIveDone = () => {
 
             <button
               onClick={nextSlide}
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-black text-[14px] md:text-[20px] tracking-widest rotate-90 origin-center z-10 hover:opacity-50"
-              style={{ fontFamily: "Helvetica, sans-serif" }}
+              className="slider-nav right"
             >
               NEXT
             </button>

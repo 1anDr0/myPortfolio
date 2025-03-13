@@ -5,11 +5,11 @@ import { FaGithub } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Exempelbild – byt till din riktiga bild från assets
 import wtrAppImage from "../assets/wtrApp.png";
 import arenaQuizImage from "../assets/arenaQuiz.png";
 import toDoImage from "../assets/toDo.png";
 import myPortfolioImage from "../assets/myPortfolio.png";
+import "../styles/MyProjects.css";
 
 const MyProjects = () => {
   const [isOpenReact, setIsOpenReact] = useState(false);
@@ -30,169 +30,83 @@ const MyProjects = () => {
   };
 
   return (
-    <section className="bg-[#6D9886] text-white py-6 px-6 md:pl-[780px] md:pr-[300px] pb-[200px] relative">
-      <h1
-        className="text-[36px] md:text-[72px] font-bold tracking-[-0.07em] leading-[1.1] text-left w-full mb-10"
-        style={{ fontFamily: "Helvetica, sans-serif" }}
-      >
-        My Projects
-      </h1>
+    <section className="projects-section">
+      <h1 className="projects-heading">My Projects</h1>
 
-     {/* React */}
-<div className="w-full max-w-[1000px] border-t border-white mb-0">
-  <button
-    onClick={() => setIsOpenReact(!isOpenReact)}
-    className="w-full flex justify-between items-center py-1 text-[20px] md:text-[24px] font-medium tracking-[-0.07em] cursor-pointer"
-    style={{ fontFamily: "Helvetica, sans-serif" }}
-  >
-    <span>React</span>
-    <span
-      className={`text-[32px] md:text-[48px] transform transition-transform duration-500 ${
-        isOpenReact ? "rotate-[-45deg]" : "rotate-0"
-      }`}
-    >
-      <FiArrowDownLeft />
-    </span>
-  </button>
-  <div
-    className={`overflow-hidden transition-all duration-500 ease-in-out ${
-      isOpenReact ? "max-h-[1000px] opacity-100 py-6" : "max-h-0 opacity-0"
-    }`}
-  >
-    <div className="flex flex-col items-center">
-    <p className="text-[16px] md:text-[20px] text-center max-w-[700px] tracking-tight" style={{ fontFamily: "Helvetica, sans-serif" }}>
-        Ett portfolio-projekt byggt i React med Tailwind CSS 
-      </p>
-      {/* Klickbar bild */}
-      <a
-        href="https://jerkerdanielsson.netlify.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:opacity-80 transition-opacity duration-300"
-      >
-        <img
-         src={myPortfolioImage}
-         alt="Weather App"
-         className="w-[350px] md:w-[700px] h-auto object-cover"
-        />
-      </a>
-
-      {/* Förklaringstext under bilden */}
-      
-    </div>
-  </div>
-</div>
-
+      {/* React */}
+      <div className="projects-box">
+        <button
+          onClick={() => setIsOpenReact(!isOpenReact)}
+          className="projects-toggle"
+        >
+          <span>React</span>
+          <span className={`projects-icon ${isOpenReact ? "open" : ""}`}>
+            <FiArrowDownLeft />
+          </span>
+        </button>
+        <div className={`projects-content ${isOpenReact ? "open" : ""}`}>
+          <div className="flex flex-col items-center">
+            <p className="text-[16px] md:text-[20px] text-center max-w-[700px]">
+              Ett portfolio-projekt byggt i React med Tailwind CSS
+            </p>
+            <a
+              href="https://jerkerdanielsson.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity duration-300"
+            >
+              <img
+                src={myPortfolioImage}
+                alt="Portfolio"
+                className="w-[350px] md:w-[700px] h-auto object-cover"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* Vanilla JavaScript */}
-      <div className="w-full max-w-[1000px] border-t border-white mb-0">
+      <div className="projects-box">
         <button
           onClick={() => setIsOpenVanilla(!isOpenVanilla)}
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[24px] font-medium tracking-[-0.05em] cursor-pointer"
-          style={{ fontFamily: "Helvetica, sans-serif" }}
+          className="projects-toggle"
         >
-          <span
-            className={`text-[32px] md:text-[48px] transform transition-transform duration-500 ${
-              isOpenVanilla ? "rotate-45" : "rotate-0"
-            }`}
-          >
+          <span className={`projects-icon ${isOpenVanilla ? "open right" : "right"}`}>
             <FiArrowDownRight />
           </span>
-          <span>HTML, CSS, Javascript</span>
+          <span>HTML, CSS, JavaScript</span>
         </button>
-        <div
-          className={`overflow-hidden transition-all duration-500 ease-in-out ${
-            isOpenVanilla ? "max-h-[1000px] opacity-100 py-6" : "max-h-0 opacity-0"
-          }`}
-        >
+        <div className={`projects-content ${isOpenVanilla ? "open" : ""}`}>
           <div className="relative flex items-center justify-center">
-            {/* BACK */}
             <button
               onClick={prevSlide}
-              className="absolute left-2 top-1/2 -translate-y-1/2 text-white text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50"
-              style={{ fontFamily: "Helvetica, sans-serif" }}
+              className="absolute left-2 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50"
             >
               BACK
             </button>
-
-         {/* Slider */}  
-<Slider ref={sliderRef} {...settings} className="w-full max-w-[700px]">
-  {/* Slide 1 – Weather App */}
-  <div className="flex flex-col items-center">
-  <p
-      className="text-[16px] md:text-[20px] text-start max-w-[700px]"
-      style={{ fontFamily: "Helvetica, sans-serif" }}
-    >
-     Weather app
-    </p>
-    <a
-      href="https://webtherapp.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:opacity-70 transition-opacity duration-300"
-    >
-      <img
-        src={wtrAppImage}
-        alt="Weather App"
-        className="w-[350px] md:w-[700px] h-auto object-cover"
-      />
-    </a>
-   
-  </div>
-
-  {/* Slide 2 – Arena Quiz */}
-  <div className="flex flex-col items-center">
-  <p
-      className="text-[16px] md:text-[20px] text-start max-w-[700px]"
-      style={{ fontFamily: "Helvetica, sans-serif" }}
-    >
-      Footballquiz
-    </p>
-    <a
-      href="https://https://arenaquizet.netlify.app//"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:opacity-70 transition-opacity duration-300"
-    >
-      <img
-        src={arenaQuizImage}
-        alt="Weather App"
-        className="w-[350px] md:w-[700px] h-auto object-cover"
-      />
-    </a>
-   
-  </div>
-
-    {/* Slide 3 - toDO*/}
-    <div className="flex flex-col items-center">
-  <p
-      className="text-[16px] md:text-[20px] text-start max-w-[700px]"
-      style={{ fontFamily: "Helvetica, sans-serif" }}
-    >
-      Footballquiz
-    </p>
-    <a
-      href="https://to-do-jd-24.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:opacity-70 transition-opacity duration-300"
-    >
-      <img
-        src={toDoImage}
-        alt="Weather App"
-        className="w-[350px] md:w-[700px] h-auto object-cover"
-      />
-    </a>
-   
-  </div>
-</Slider>
-
-
-            {/* NEXT */}
+            <Slider ref={sliderRef} {...settings} className="w-full max-w-[700px]">
+              <div className="flex flex-col items-center">
+                <p className="text-[16px] md:text-[20px] text-start max-w-[700px]">Weather app</p>
+                <a href="https://webtherapp.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <img src={wtrAppImage} alt="Weather App" className="w-[350px] md:w-[700px] h-auto object-cover" />
+                </a>
+              </div>
+              <div className="flex flex-col items-center">
+                <p className="text-[16px] md:text-[20px] text-start max-w-[700px]">Footballquiz</p>
+                <a href="https://arenaquizet.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <img src={arenaQuizImage} alt="Football Quiz" className="w-[350px] md:w-[700px] h-auto object-cover" />
+                </a>
+              </div>
+              <div className="flex flex-col items-center">
+                <p className="text-[16px] md:text-[20px] text-start max-w-[700px]">To Do App</p>
+                <a href="https://to-do-jd-24.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <img src={toDoImage} alt="To Do App" className="w-[350px] md:w-[700px] h-auto object-cover" />
+                </a>
+              </div>
+            </Slider>
             <button
               onClick={nextSlide}
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-white text-[14px] md:text-[20px] tracking-widest rotate-90 origin-center z-10 hover:opacity-50"
-              style={{ fontFamily: "Helvetica, sans-serif" }}
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-90 origin-center z-10 hover:opacity-50"
             >
               NEXT
             </button>
@@ -201,26 +115,17 @@ const MyProjects = () => {
       </div>
 
       {/* Figma */}
-      <div className="w-full max-w-[1000px] border-t border-b border-white">
+      <div className="projects-box">
         <button
           onClick={() => setIsOpenFigma(!isOpenFigma)}
-          className="w-full flex justify-between items-center py-1 text-[20px] md:text-[24px] font-medium tracking-[-0.05em] cursor-pointer"
-          style={{ fontFamily: "Helvetica, sans-serif" }}
+          className="projects-toggle"
         >
           <span>Figma</span>
-          <span
-            className={`text-[32px] md:text-[48px] transform transition-transform duration-500 ${
-              isOpenFigma ? "rotate-[-45deg]" : "rotate-0"
-            }`}
-          >
+          <span className={`projects-icon ${isOpenFigma ? "open" : ""}`}>
             <FiArrowDownLeft />
           </span>
         </button>
-        <div
-          className={`overflow-hidden transition-all duration-500 ease-in-out ${
-            isOpenFigma ? "max-h-[1000px] opacity-100 py-6" : "max-h-0 opacity-0"
-          }`}
-        >
+        <div className={`projects-content ${isOpenFigma ? "open" : ""}`}>
           <div className="flex justify-center">
             <iframe
               className="w-[350px] h-[196px] md:w-[700px] md:h-[393px] border"

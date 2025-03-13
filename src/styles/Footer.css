@@ -1,0 +1,144 @@
+.footer-section {
+  background-color: #1c1c1c00;
+  color: #1c1c1c;
+  padding: 6rem 1.5rem 8rem;
+  width: 100%;
+}
+
+.footer-heading {
+  font-family: Helvetica, sans-serif;
+  font-size: clamp(28px, 6vw, 128px);
+  font-weight: bold;
+  letter-spacing: -0.07em;
+  line-height: 1.1;
+  text-align: left; /* ← Ändra detta från center till left */
+  margin-bottom: 2rem;
+  padding-left: 0; /* säkerställ att den följer samma padding som knappen */
+}
+
+
+.footer-box-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-box {
+  width: 100%;
+  max-width: 640px;
+  border-top: 1px solid #1c1c1c;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.footer-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  font-size: clamp(18px, 2.5vw, 32px);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  padding: 0rem 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.footer-icon {
+  font-size: clamp(28px, 5vw, 48px);
+  transition: transform 0.5s ease;
+}
+
+.footer-icon.open {
+  transform: rotate(-45deg);
+}
+
+.footer-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.footer-content.open {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 2rem 0;
+}
+
+.footer-inner {
+  width: 100%;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-row,
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.footer-link {
+  color: #1c1c1c;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+}
+
+.footer-location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: clamp(16px, 2vw, 20px);
+  margin-top: 2rem;
+}
+
+.footer-icon-sm {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.footer-bottom {
+  background-color: #1c1c1c00;
+  color: rgb(40, 40, 40);
+  text-align: center;
+  padding: 1rem;
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+/* ================== RESPONSIV JUSTERINGAR =================== */
+
+@media (min-width: 768px) {
+  .footer-heading {
+    text-align: center;
+  }
+
+  .footer-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-bottom {
+    text-align: right;
+    padding-right: 300px;
+  }
+}
