@@ -122,7 +122,7 @@
 @media (max-width: 640px) {
   .stuff-section {
     padding: 4rem 1.5rem 6rem;
-    margin-bottom: -100px;
+    margin-bottom: -10px;
   }
   .stuff-heading {
     font-size: clamp(24px, 6vw, 52px);
