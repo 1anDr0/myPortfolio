@@ -277,7 +277,7 @@
       width: 42%;
     }
     .hero-title {
-      font-size: clamp(30px, 5.5vw, 52px);
+      font-size: clamp(26px, 5.5vw, 52px);
     }
     .hero-subtitle {
       font-size: clamp(20px, 3vw, 30px);
