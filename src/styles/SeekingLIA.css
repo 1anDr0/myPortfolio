@@ -3,7 +3,7 @@
 /* ======================= */
 
 .lia-section {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #FBFBFB;
   color: #1C1C1C;
   position: relative;
   width: 100%;
@@ -164,6 +164,7 @@
 @media (max-width: 640px) {
   .lia-section {
     padding: 4rem 1.5rem 6rem;
+    padding-bottom: 0px;
   }
 }
 

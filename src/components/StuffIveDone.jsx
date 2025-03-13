@@ -23,7 +23,7 @@ const StuffIveDone = () => {
 
   return (
     <section className="stuff-section">
-      <h2 className="stuff-heading">Stuff I've Done Professionally</h2>
+      <h2 className="stuff-heading">Stuff I've Done<br />Professionally</h2>
 
       <div className="stuff-box">
         <button

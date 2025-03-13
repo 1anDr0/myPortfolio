@@ -1,12 +1,16 @@
+
+
 body {
-  background-image: url("/background.jpg"); /* ✅ ligger i public */
+  background-image: url("/background.png");
   background-repeat: no-repeat;
   background-position: bottom center;
- 
-  background-attachment: scroll; /* scroll = bilden rör sig inte med innehåll */
-  z-index: -1;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
-
 
 body::before {
   content: "";
@@ -15,7 +19,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(250, 247, 247, 0.589));
+  
   pointer-events: none;
   z-index: -1;
 }

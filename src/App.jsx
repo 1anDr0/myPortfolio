@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import "./styles/Background.css";
 import Hero from "./components/Hero";
 import SeekingLIASection from "./components/SeekingLIASection";
 import MySkills from "./components/MySkills";
@@ -10,7 +11,8 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import GithubScroller from "./components/GithubScroller";
 import EmailScroller from "./components/EmailScroller";
-import "./styles/Background.css";
+
+
 
 
 function App() {
