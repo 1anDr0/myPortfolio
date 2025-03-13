@@ -65,7 +65,7 @@
   .quote-section {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 150px;
+    padding-bottom: 60px;
   }
   .quote-text {
     font-size: clamp(36px, 6vw, 72px);

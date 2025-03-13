@@ -95,7 +95,7 @@
     z-index: 50;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
-    font-size: clamp(24px, 8vw, 72px);
+    font-size: clamp(44px, 8vw, 72px);
     line-height: 1;
     padding-bottom: 0.5rem;
     white-space: nowrap;
@@ -118,7 +118,7 @@
 
   .hero-subtitle {
     font-weight: 300;
-    font-size: clamp(20px, 4vw, 44px);
+    font-size: clamp(28px, 4vw, 44px);
     line-height: 1;
     letter-spacing: -0.07em;
     white-space: nowrap;
@@ -126,8 +126,8 @@
 
   .cv-box {
     max-width: 800px;
-    border-top: 1px solid #1C1C1C;
-    border-bottom: 1px solid #1C1C1C;
+    border-top: 1px solid #A0A0A0;
+    border-bottom: 1px solid #A0A0A0;
     margin-top: 2rem;
     
       position: relative;
@@ -144,6 +144,27 @@
     font-size: clamp(18px, 2.5vw, 24px);
     font-weight: 500;
     cursor: pointer;
+  }
+
+  .cv-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: rgba(255, 255, 255, 0);
+    color: #1C1C1C;
+    border: 2px solid #1C1C1C;
+    height: 44px;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-size: clamp(20px, 3vw, 44px);
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+    transition: all 0.3s ease;
+  }
+
+  .cv-download-btn:hover {
+    background-color: #1C1C1C;
+    color: white;
   }
 
   .cv-icon {
@@ -181,6 +202,14 @@
   cursor: pointer;
   }
 
+  .cv-text {
+    font-family: Helvetica, sans-serif;
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 1.5;
+    max-width: 780px;
+    margin-bottom: 2rem;
+  }
+
   /* ===================== */
   /* RESPONSIVITET – LAPTOPS & DESKTOPS */
   /* ===================== */
@@ -190,10 +219,10 @@
       width: 40%;
     }
     .hero-title {
-      font-size: clamp(24px, 6.5vw, 66px);
+      font-size: clamp(50px, 6.5vw, 66px);
     }
     .hero-subtitle {
-      font-size: clamp(18px, 4vw, 40px);
+      font-size: clamp(44px, 4vw, 40px);
     }
    
     
@@ -221,10 +250,10 @@
       width: 24%;
     }
     .hero-title {
-      font-size: clamp(24px, 6.5vw, 66px);
+      font-size: clamp(44px, 6.5vw, 66px);
     }
     .hero-subtitle {
-      font-size: clamp(18px, 4vw, 40px);
+      font-size: clamp(40px, 4vw, 40px);
     }
     
   }
@@ -234,10 +263,10 @@
       width: 45%;
     }
     .hero-title {
-      font-size: clamp(22px, 6vw, 60px);
+      font-size: clamp(44px, 6vw, 60px);
     }
     .hero-subtitle {
-      font-size: clamp(18px, 3.5vw, 36px);
+      font-size: clamp(36px, 3.5vw, 36px);
     }
    
 
@@ -248,14 +277,14 @@
       width: 42%;
     }
     .hero-title {
-      font-size: clamp(20px, 5.5vw, 52px);
+      font-size: clamp(36px, 5.5vw, 52px);
     }
     .hero-subtitle {
-      font-size: clamp(16px, 3vw, 30px);
+      font-size: clamp(24px, 3vw, 30px);
     }
     
     .cv-text {
-      font-size: clamp(13px, 1.6vw, 18px);
+      font-size: clamp(16px, 1.6vw, 18px);
     }
   
   }
@@ -277,6 +306,7 @@
   .hero-section .container {
     padding-left: 2rem;
     padding-right: 2rem;
+    
   }
 }
 
@@ -284,6 +314,7 @@
   .hero-section .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  
   }
 
   .cv-box {

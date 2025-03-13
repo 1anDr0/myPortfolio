@@ -56,8 +56,9 @@ const Hero = () => {
             </p>
 
             <a href="/cv-jerker-danielsson.pdf" download className="cv-download-btn">
-              <FiDownload className="cv-download-icon" />
-              Download my CV
+              
+              DOWNLOAD MY CV
+          
             </a>
           </div>
         </div>

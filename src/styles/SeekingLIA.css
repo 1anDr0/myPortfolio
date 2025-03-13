@@ -3,7 +3,7 @@
 /* ======================= */
 
 .lia-section {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb00;
   color: #1C1C1C;
   position: relative;
   width: 100%;
@@ -24,7 +24,7 @@
 
 .lia-heading {
   font-family: Helvetica, sans-serif;
-  font-size: clamp(36px, 6vw, 128px);
+  font-size: clamp(28px, 6vw, 128px);
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: -0.07em;
@@ -36,8 +36,8 @@
 
 .lia-box {
   width: 100%;
-  border-top: 1px solid #1C1C1C;
-  border-bottom: 1px solid #1C1C1C;
+  border-top: 1px solid #A0A0A0;
+  border-bottom: 1px solid #A0A0A0;
   margin-top: 0rem; /* minskat mellanrum ovanför */
   margin-bottom: 10rem; /* minskat mellanrum under */
 }
@@ -95,7 +95,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   color: #1C1C1C;
   border: 2px solid #1C1C1C;
   height: 44px;
@@ -158,13 +158,14 @@
 @media (max-width: 768px) {
   .lia-section {
     padding: 6rem 2rem 8rem;
+    margin-bottom: -200px;
   }
 }
 
 @media (max-width: 640px) {
   .lia-section {
     padding: 4rem 1.5rem 6rem;
-    padding-bottom: 0px;
+    margin-bottom: -160px;
   }
 }
 
