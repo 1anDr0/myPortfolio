@@ -46,8 +46,8 @@ const MyProjects = () => {
         </button>
         <div className={`projects-content ${isOpenReact ? "open" : ""}`}>
           <div className="flex flex-col items-center">
-            <p className="text-[16px] md:text-[20px] text-center max-w-[700px]">
-              Ett portfolio-projekt byggt i React med Tailwind CSS
+            <p className="text-[16px] md:text-[20px] text-center max-w-[700px] mb-4">
+              Ett portfolio-projekt byggt i React
             </p>
             <a
               href="https://jerkerdanielsson.netlify.app/"
@@ -84,21 +84,21 @@ const MyProjects = () => {
 >
   BACK
 </button>
-            <Slider ref={sliderRef} {...settings} className="w-full max-w-[700px]">
+            <Slider ref={sliderRef} {...settings} className="w-full max-w-[700px] mb-4">
               <div className="flex flex-col items-center justify-center w-full">
-                <p className="text-[16px] md:text-[20px] text-start max-w-[700px]">Weather app</p>
+                <p className="text-[16px] md:text-[20px] text-center max-w-[700px] mb-4">Weather app</p>
                 <a href="https://webtherapp.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <img src={wtrAppImage} alt="Weather App" className="w-[350px] md:w-[700px] h-auto object-cover" />
                 </a>
               </div>
               <div className="flex flex-col items-center">
-                <p className="text-[16px] md:text-[20px] text-start max-w-[700px]">Football quiz</p>
+                <p className="text-[16px] md:text-[20px] text-center max-w-[700px] mb-4">Football quiz</p>
                 <a href="https://arenaquizet.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <img src={arenaQuizImage} alt="Football Quiz" className="w-[350px] md:w-[700px] h-auto object-cover" />
                 </a>
               </div>
               <div className="flex flex-col items-center">
-                <p className="text-[16px] md:text-[20px] text-start max-w-[700px]">To Do App</p>
+                <p className="text-[16px] md:text-[20px] text-center max-w-[700px] mb-4">To Do App</p>
                 <a href="https://to-do-jd-24.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <img src={toDoImage} alt="To Do App" className="w-[350px] md:w-[700px] h-auto object-cover" />
                 </a>
@@ -126,14 +126,21 @@ const MyProjects = () => {
           </span>
         </button>
         <div className={`projects-content ${isOpenFigma ? "open" : ""}`}>
-          <div className="flex justify-center">
-            <iframe
-              className="w-[350px] h-[196px] md:w-[700px] md:h-[393px] border"
-              src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/sq0Bdu3BMUx9RXdZAvZb1O/TECHFLOW?page-id=0%3A1&node-id=47-444&starting-point-node-id=47%3A444"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
+  <div className="flex flex-col items-center justify-center space-y-6">
+    {/* Beskrivningstext */}
+    <p className="text-[16px] md:text-[20px] max-w-[700px] text-start px-4">
+      Fiktivt e-handelsbolag med fokus på smarta hem och innovativa tekniklösningar.
+    </p>
+
+    {/* Figma-iframe */}
+    <iframe
+      className="w-[350px] h-[196px] md:w-[700px] md:h-[393px] border"
+      src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/sq0Bdu3BMUx9RXdZAvZb1O/TECHFLOW?page-id=0%3A1&node-id=47-444&starting-point-node-id=47%3A444"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
       </div>
     </section>
   );
