@@ -40,50 +40,55 @@ const StuffIveDone = () => {
           <div className="relative flex items-center justify-center">
           <button
   onClick={prevSlide}
-  className="absolute left-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg-[FBFBFB]  px-1 py-0.5 rounded"
+  className="absolute left-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg-[#FBFBFB]  px-1 py-0.5 rounded"
 >
   BACK
 </button>
 
             <Slider ref={sliderRef} {...settings} className="w-full max-w-[700px]">
-              <div>
-                <iframe
-                  width="100%"
-                  height="393"
-                  src="https://www.youtube.com/embed/HNLajDKs4Jg"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div>
-                <iframe
-                  width="100%"
-                  height="393"
-                  src="https://www.youtube.com/embed/x5nwAiPh3j4"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div>
-                <iframe
-                  width="100%"
-                  height="393"
-                  src="https://www.youtube.com/embed/DCWPih-FY28"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </Slider>
+  <div className="w-full">
+    <div className="relative w-full aspect-video">
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/HNLajDKs4Jg"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+
+  <div className="w-full">
+    <div className="relative w-full aspect-video">
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/x5nwAiPh3j4"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+
+  <div className="w-full">
+    <div className="relative w-full aspect-video">
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/DCWPih-FY28"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</Slider>
 
             <button
-  onClick={prevSlide}
-  className="absolute right-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg-[FBFBFB]  px-1 py-0.5 rounded"
+  onClick={nextSlide}
+  className="absolute right-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg-[#FBFBFB]  px-1 py-0.5 rounded"
 >
   NEXT
 </button>

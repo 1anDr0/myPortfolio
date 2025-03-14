@@ -80,12 +80,12 @@ const MyProjects = () => {
           <div className="relative flex items-center justify-center">
           <button
   onClick={prevSlide}
-  className="absolute left-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg[#FBFBFB]  px-1 py-0.5 rounded"
+  className="absolute left-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg-[#FBFBFB]  px-1 py-0.5 rounded"
 >
   BACK
 </button>
             <Slider ref={sliderRef} {...settings} className="w-full max-w-[700px]">
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center justify-center w-full">
                 <p className="text-[16px] md:text-[20px] text-start max-w-[700px]">Weather app</p>
                 <a href="https://webtherapp.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <img src={wtrAppImage} alt="Weather App" className="w-[350px] md:w-[700px] h-auto object-cover" />
@@ -105,8 +105,8 @@ const MyProjects = () => {
               </div>
             </Slider>
             <button
-  onClick={prevSlide}
-  className="absolute right-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg-[FBFBFB] px-1 py-0.5 rounded"
+  onClick={nextSlide}
+  className="absolute right-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg-[#FBFBFB] px-1 py-0.5 rounded"
 >
   NEXT
 </button>
