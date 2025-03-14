@@ -26,6 +26,6 @@ body::before {
 
 @media (max-width: 640px) {
   body {
-    background-size: 480%;
+    background-size: 240%;
   }
 }
