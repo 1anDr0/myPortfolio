@@ -39,7 +39,7 @@ const Footer = () => {
 
                   <div className="footer-right">
                     <a
-                      href="https://linkedin.com/in/jerkerdanielsson"
+                      href="https://www.linkedin.com/in/jerker-danielsson/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="footer-link"

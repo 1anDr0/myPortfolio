@@ -7,7 +7,7 @@ const GithubScroller = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY || 0;
-      setShowBadge(scrollY > 800 && scrollY < 5000);
+      setShowBadge(scrollY > 600 && scrollY < 5000);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -16,7 +16,7 @@ const GithubScroller = () => {
 
   return (
     <div
-      className={`hidden 2xl:flex fixed  lg:-left-10Ö xl:left-0 2xl:left-10 fixed left-16 xl:left-10 top-[550px] hidden lg:flex z-50 flex-col items-center transition-opacity duration-500 ease-in-out ${
+      className={`fixed top-[450px] left-10 lg:-left-10 xl:left-10 2xl:left-10 hidden lg:flex z-50 flex-col items-center transition-opacity duration-500 ease-in-out ${
         showBadge ? "opacity-100" : "opacity-0"
       }`}
     >
@@ -30,18 +30,22 @@ const GithubScroller = () => {
         <TbBrandGithubFilled className="w-8 h-8 text-black" />
       </a>
 
-      {/* Vertikal text */}
-      <span
-        className="text-black text-[18px] font-bold tracking-widest rotate-[-90deg] origin-center hover:opacity-50 mt-12"
+      {/* Vertikal klickbar text */}
+      <a
+        href="https://github.com/1anDr0"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-black text-[18px] font-bold tracking-[0.20em] rotate-[-90deg] origin-center hover:opacity-50 mt-12 cursor-pointer"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
         THIS IS MY GITHUB
-      </span>
+      </a>
     </div>
   );
 };
 
 export default GithubScroller;
+
 
 
 

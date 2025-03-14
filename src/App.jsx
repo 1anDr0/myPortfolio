@@ -27,6 +27,7 @@ function App() {
       <MyProjects />
       <StuffIveDone />
       <Quote />
+      <footer id="contact" className="footer"></footer>
       <Footer />
       <ScrollToTop />
       <EmailScroller />

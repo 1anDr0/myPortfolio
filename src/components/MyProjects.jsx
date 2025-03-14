@@ -92,7 +92,7 @@ const MyProjects = () => {
                 </a>
               </div>
               <div className="flex flex-col items-center">
-                <p className="text-[16px] md:text-[20px] text-start max-w-[700px]">Footballquiz</p>
+                <p className="text-[16px] md:text-[20px] text-start max-w-[700px]">Football quiz</p>
                 <a href="https://arenaquizet.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <img src={arenaQuizImage} alt="Football Quiz" className="w-[350px] md:w-[700px] h-auto object-cover" />
                 </a>

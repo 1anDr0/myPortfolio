@@ -24,17 +24,18 @@ const Navbar = () => {
   
       <div className={`navbar-menu ${isOpen ? "open" : ""}`}>
         <div className="navbar-links">
+        <a href="#contact" className="nav-link">CONTACT</a>
+
           <a href="#cv" className="nav-link">CV</a>
-          <a href="#cover-letter" className="nav-link">COVER LETTER</a>
-          <a href="https://github.com/dittkonto" target="_blank" rel="noopener noreferrer" className="nav-link icon-link">
+         
+          <a href="https://github.com/1anDr0" target="_blank" rel="noopener noreferrer" className="nav-link icon-link">
             <span>GITHUB</span>
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/dittkonto" target="_blank" rel="noopener noreferrer" className="nav-link icon-link">
+          <a href="https://www.linkedin.com/in/jerker-danielsson/" target="_blank" rel="noopener noreferrer" className="nav-link icon-link">
             <span>LINKEDIN</span>
             <FaLinkedin />
           </a>
-          <a href="#contact" className="nav-link">CONTACT</a>
         </div>
       </div>
     </div>

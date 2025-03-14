@@ -2,7 +2,7 @@
 
   .hero-section {
     position: relative;
-    background-color: #FBFBFB;
+    background-color: #fbfbfb00;
     color: #1C1C1C;
     min-height: auto;
     display: flex;
@@ -73,7 +73,7 @@
     border-radius: 9999px;
     object-fit: cover;
     position: absolute;
-    right: 200px;
+    right: 260px;
     top: 140px;
     transition: transform 0.5s ease;
     max-width: 1920px;
@@ -107,14 +107,29 @@
     left: 0;
     top: 0;
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 0s ease, visibility 0s ease;
   }
-  .group:hover .title-en {
-    opacity: 0;
-  }
-  .group:hover .title-sv {
+  .title-en {
     opacity: 1;
+    visibility: visible;
+    z-index: 1;
   }
+  .title-sv {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+  }
+
+/* Hover-effekt: Växla språk */
+.hero-title:hover .title-en {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hero-title:hover .title-sv {
+  opacity: 1;
+  visibility: visible;
+}
 
   .hero-subtitle {
     font-weight: 300;
@@ -213,8 +228,17 @@
   /* ===================== */
   /* RESPONSIVITET – LAPTOPS & DESKTOPS */
   /* ===================== */
+  @media (max-width: 1800px) {
+    .hero-profile {
+      right: 150px;
+    }
+  }
+
   
   @media (max-width: 1700px) {
+    .hero-profile {
+      right: 150px;
+    }
     .hero-text {
       width: 40%;
     }
