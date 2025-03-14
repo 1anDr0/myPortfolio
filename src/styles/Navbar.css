@@ -33,7 +33,7 @@
 }
 
 .navbar-title {
-  font-size: clamp(18px, 4vw, 24px);
+  font-size: clamp(24px, 4vw, 24px);
   font-weight: 500;
   letter-spacing: -0.05em;
 }

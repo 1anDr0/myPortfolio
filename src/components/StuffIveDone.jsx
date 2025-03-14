@@ -38,12 +38,12 @@ const StuffIveDone = () => {
 
         <div className={`stuff-content ${isOpen ? "open" : ""}`}>
           <div className="relative flex items-center justify-center">
-            <button
-              onClick={prevSlide}
-              className="slider-nav left"
-            >
-              BACK
-            </button>
+          <button
+  onClick={prevSlide}
+  className="absolute left-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg-[FBFBFB]  px-1 py-0.5 rounded"
+>
+  BACK
+</button>
 
             <Slider ref={sliderRef} {...settings} className="w-full max-w-[700px]">
               <div>
@@ -82,11 +82,11 @@ const StuffIveDone = () => {
             </Slider>
 
             <button
-              onClick={nextSlide}
-              className="slider-nav right"
-            >
-              NEXT
-            </button>
+  onClick={prevSlide}
+  className="absolute right-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg-[FBFBFB]  px-1 py-0.5 rounded"
+>
+  NEXT
+</button>
           </div>
         </div>
       </div>

@@ -31,11 +31,7 @@ const SeekingLIASection = () => {
               my craft, ensuring that my work balances aesthetics with functionality.
             </p>
 
-            <div className="lia-button-wrapper">
-              <button className="lia-download-btn">
-                COVER LETTER <FiDownload className="lia-download-icon" />
-              </button>
-            </div>
+          
           </div>
         </div>
       </div>

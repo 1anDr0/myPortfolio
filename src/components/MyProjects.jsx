@@ -26,7 +26,7 @@ const MyProjects = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows:true,
   };
 
   return (
@@ -78,12 +78,12 @@ const MyProjects = () => {
         </button>
         <div className={`projects-content ${isOpenVanilla ? "open" : ""}`}>
           <div className="relative flex items-center justify-center">
-            <button
-              onClick={prevSlide}
-              className="absolute left-2 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50"
-            >
-              BACK
-            </button>
+          <button
+  onClick={prevSlide}
+  className="absolute left-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg[#FBFBFB]  px-1 py-0.5 rounded"
+>
+  BACK
+</button>
             <Slider ref={sliderRef} {...settings} className="w-full max-w-[700px]">
               <div className="flex flex-col items-center">
                 <p className="text-[16px] md:text-[20px] text-start max-w-[700px]">Weather app</p>
@@ -105,11 +105,11 @@ const MyProjects = () => {
               </div>
             </Slider>
             <button
-              onClick={nextSlide}
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-90 origin-center z-10 hover:opacity-50"
-            >
-              NEXT
-            </button>
+  onClick={prevSlide}
+  className="absolute right-0 top-1/2 -translate-y-1/2 text-[#1C1C1C] text-[14px] md:text-[20px] tracking-widest rotate-[-90deg] origin-center z-10 hover:opacity-50 bg-[FBFBFB] px-1 py-0.5 rounded"
+>
+  NEXT
+</button>
           </div>
         </div>
       </div>

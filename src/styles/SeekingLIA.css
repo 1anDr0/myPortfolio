@@ -84,7 +84,7 @@
  
   line-height: 1.5;
   max-width: 780px;
-  margin-bottom: 2rem; /* nytt avstånd till knappen */
+  margin-bottom: 0rem; /* nytt avstånd till knappen */
 }
 
 .lia-button-wrapper {
@@ -125,6 +125,7 @@
     padding: 1,5rem 2rem; /* ökad padding horisontellt */
     height: auto; /* så höjden styrs naturligt */
   }
+
 
 }
 

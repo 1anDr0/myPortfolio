@@ -23,3 +23,9 @@ body::before {
   pointer-events: none;
   z-index: -1;
 }
+
+@media (max-width: 640px) {
+  body {
+    background-size: 480%;
+  }
+}
