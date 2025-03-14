@@ -39,7 +39,7 @@
 }
 
 .navbar-icon {
-  font-size: clamp(24px, 6vw, 44px);
+  font-size: clamp(32px, 6vw, 44px);
   transition: transform 0.5s ease;
 }
 
@@ -64,7 +64,7 @@
 .navbar-links {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1,5rem;
   font-size: clamp(18px, 3vw, 24px);
   font-weight: 500;
   letter-spacing: -0.05em;
@@ -120,9 +120,7 @@
     width: 100%;
     gap: 0;
   }
-  .navbar-title {
-    font-size: 18px;
-  }
+ 
   .navbar-icon {
     align-self: auto;
   }

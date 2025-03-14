@@ -130,7 +130,5 @@
   .stuff-toggle {
     font-size: clamp(18px, 4vw, 26px);
   }
-  .stuff-icon {
-    font-size: clamp(24px, 5vw, 36px);
-  }
+  
 }

@@ -112,7 +112,5 @@
   .projects-toggle {
     font-size: clamp(18px, 4vw, 26px);
   }
-  .projects-icon {
-    font-size: clamp(24px, 5vw, 36px);
-  }
+
 }

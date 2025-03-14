@@ -92,7 +92,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
-  font-size: clamp(28px, 3vw, 44px);
+  font-size: clamp(28px, 4vw, 48px);
 }
 
 /* RESPONSIVITET */

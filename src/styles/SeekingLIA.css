@@ -81,7 +81,7 @@
 
 .lia-text {
   font-family: Helvetica, sans-serif;
-  font-size: clamp(16px, 2vw, 20px);
+ 
   line-height: 1.5;
   max-width: 780px;
   margin-bottom: 2rem; /* nytt avstånd till knappen */
@@ -126,9 +126,6 @@
     height: auto; /* så höjden styrs naturligt */
   }
 
-  .lia-icon {
-    font-size: clamp(24px, 5vw, 36px); /* mindre ikon för att balansera */
-  }
 }
 
 
