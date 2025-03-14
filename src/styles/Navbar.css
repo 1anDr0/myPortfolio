@@ -100,6 +100,8 @@
   height: 24px;
 }
 
+
+
 /* Responsive padding for smaller screens */
 @media (max-width: 768px) {
   .navbar-container {

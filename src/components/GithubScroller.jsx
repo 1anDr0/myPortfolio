@@ -16,30 +16,25 @@ const GithubScroller = () => {
 
   return (
     <div
-      className={`fixed top-[450px] left-10 lg:-left-10 xl:left-10 2xl:left-10 hidden lg:flex z-50 flex-col items-center transition-opacity duration-500 ease-in-out ${
+      className={`fixed top-[450px] left-0 xl:left-0 hidden xl:flex z-50 flex-col items-center transition-opacity duration-500 ease-in-out ${
         showBadge ? "opacity-100" : "opacity-0"
       }`}
     >
-      {/* GitHub ikon */}
       <a
         href="https://github.com/1anDr0"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:opacity-70 transition-opacity duration-300 mb-20"
+        className="hover:opacity-70 transition-opacity duration-300 mb-16 xl:mb-20"
       >
-        <TbBrandGithubFilled className="w-8 h-8 text-black" />
+        <TbBrandGithubFilled className="w-7 h-7 xl:w-8 xl:h-8 text-black" />
       </a>
 
-      {/* Vertikal klickbar text */}
-      <a
-        href="https://github.com/1anDr0"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-black text-[18px] font-bold tracking-[0.20em] rotate-[-90deg] origin-center hover:opacity-50 mt-12 cursor-pointer"
+      <span
+        className="text-black text-[16px] xl:text-[18px] font-bold tracking-widest rotate-[-90deg] origin-center hover:opacity-50 mt-10 xl:mt-12 cursor-pointer"
         style={{ fontFamily: "Helvetica, sans-serif" }}
       >
         THIS IS MY GITHUB
-      </a>
+      </span>
     </div>
   );
 };
