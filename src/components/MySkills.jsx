@@ -19,7 +19,7 @@ const MySkills = () => {
           onClick={() => setIsOpenFrontend(!isOpenFrontend)}
           className="skills-toggle"
         >
-          <span>Frontend</span>
+          <span className="skills-frontend">Frontend</span>
           <span className={`skills-icon ${isOpenFrontend ? "open" : ""}`}>
             <FiArrowDownLeft />
           </span>
@@ -56,7 +56,7 @@ const MySkills = () => {
           <span className={`skills-icon ${isOpenDesign ? "open" : ""}`}>
             <FiArrowDownRight />
           </span>
-          <span>Design</span>
+          <span className="skills-design">Design</span>
         </button>
 
         <div className={`skills-content ${isOpenDesign ? "open" : ""}`}>

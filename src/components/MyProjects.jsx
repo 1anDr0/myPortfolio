@@ -39,7 +39,7 @@ const MyProjects = () => {
           onClick={() => setIsOpenReact(!isOpenReact)}
           className="projects-toggle"
         >
-          <span>React</span>
+          <span className="projects-react">React</span>
           <span className={`projects-icon ${isOpenReact ? "open" : ""}`}>
             <FiArrowDownLeft />
           </span>
@@ -74,7 +74,7 @@ const MyProjects = () => {
           <span className={`projects-icon ${isOpenVanilla ? "open right" : "right"}`}>
             <FiArrowDownRight />
           </span>
-          <span>HTML, CSS, JavaScript</span>
+          <span className="projects-javascript">HTML, CSS, JavaScript</span>
         </button>
         <div className={`projects-content ${isOpenVanilla ? "open" : ""}`}>
           <div className="relative flex items-center justify-center">
@@ -120,7 +120,7 @@ const MyProjects = () => {
           onClick={() => setIsOpenFigma(!isOpenFigma)}
           className="projects-toggle"
         >
-          <span>Figma</span>
+          <span className="projects-figma">Figma</span>
           <span className={`projects-icon ${isOpenFigma ? "open" : ""}`}>
             <FiArrowDownLeft />
           </span>

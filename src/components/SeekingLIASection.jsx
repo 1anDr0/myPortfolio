@@ -6,6 +6,7 @@ const SeekingLIASection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+    
     <section className="lia-section">
       <div className="lia-wrapper">
         <h1 className="lia-heading">
@@ -14,7 +15,7 @@ const SeekingLIASection = () => {
 
         <div className="lia-box">
           <button className="lia-toggle" onClick={() => setIsOpen(!isOpen)}>
-            <span>About me</span>
+            <span className="lia-about">About me</span>
             <span className={`lia-icon ${isOpen ? "open" : ""}`}>
               <FiArrowDownLeft />
             </span>
@@ -30,6 +31,8 @@ const SeekingLIASection = () => {
               responsiveness. I’m always exploring new trends in web design to refine
               my craft, ensuring that my work balances aesthetics with functionality.
             </p>
+
+            
 
           
           </div>

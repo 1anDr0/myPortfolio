@@ -12,6 +12,18 @@
   width: 100%;
 }
 
+.projects-react {
+  margin-left: 0.5rem;
+}
+
+.projects-javascript {
+  margin-right: 0.5rem;
+}
+
+.projects-figma {
+  margin-left: 0.5rem;
+}
+
 .projects-heading {
   font-family: Helvetica, sans-serif;
   font-size: clamp(28px, 6vw, 72px);

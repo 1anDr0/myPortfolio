@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FiArrowDownLeft, FiDownload } from "react-icons/fi";
-import { FaCode, FaPaintBrush } from "react-icons/fa";
-import { MdOutlineSportsVolleyball } from "react-icons/md";
-import dalahorseImage from "../assets/Dalecarlian_horse.svg.png";
+// import { FaCode, FaPaintBrush } from "react-icons/fa";
+// import { MdOutlineSportsVolleyball } from "react-icons/md";
+// import dalahorseImage from "../assets/Dalecarlian_horse.svg.png";
 import rectangleImage from "../assets/Rectangle.png";
 import figmaImage from "../assets/me.jpg";
 import "../styles/Hero.css";
@@ -38,7 +38,7 @@ const Hero = () => {
 
         <div className="cv-box">
           <button className="cv-button" onClick={() => setIsOpenCV(!isOpenCV)}>
-            <span>CV</span>
+            <span className="hero-cv">CV</span>
             <span className={`cv-icon ${isOpenCV ? "open" : ""}`}>
               <FiArrowDownLeft />
             </span>

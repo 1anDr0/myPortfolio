@@ -65,6 +65,16 @@
   cursor: pointer;
 }
 
+.skills-frontend{
+   margin-left: 0.5rem;
+  
+}
+
+.skills-design{
+  margin-right: 0.5rem;
+ 
+}
+
 .skills-icon {
   font-size: clamp(28px, 4vw, 48px);
   transition: transform 0.5s ease;
@@ -104,7 +114,7 @@
 .tag-row {
   display: flex;
   justify-content: space-between;
-  width: 99%;
+  width: 100%;
   font-size: clamp(32px, 4vw, 96px);
   font-weight: bold;
   letter-spacing: -0.07em;

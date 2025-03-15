@@ -30,7 +30,7 @@ const StuffIveDone = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="stuff-toggle"
         >
-          <span>YouTube</span>
+          <span className="stuff-youtube">YouTube</span>
           <span className={`stuff-icon ${isOpen ? "open" : ""}`}>
             <FiArrowDownLeft />
           </span>
