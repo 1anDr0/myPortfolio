@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import { FiArrowDownLeft, FiArrowDownRight } from "react-icons/fi";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaFigma, FaPaintBrush, FaGithub } from "react-icons/fa";
+import {
+  SiFigma,
+  SiMiro,
+  SiAdobephotoshop,
+  SiAdobexd,
+  SiAdobeindesign,
+  SiAdobeillustrator,
+  SiCanva,
+} from "react-icons/si";
 
 import { SiTailwindcss, SiNpm, SiBootstrap } from "react-icons/si";
 import "../styles/MySkills.css";
@@ -26,6 +35,7 @@ const MySkills = () => {
         </button>
 
         <div className={`skills-content ${isOpenFrontend ? "open" : ""}`}>
+        <div className={`skills-content ${isOpenFrontend ? "open" : ""}`}>
   <div className="skills-tags">
     <div className="tag-row left">
       <span>HTML,</span>
@@ -43,6 +53,20 @@ const MySkills = () => {
       <span>& more</span>
     </div>
   </div>
+
+  {/* ⬇ Ikoner under text-raderna */}
+  <div className="skills-icons">
+    <FaHtml5 className="skill-icon" />
+    <FaCss3Alt className="skill-icon" />
+    <FaJsSquare className="skill-icon" />
+    <FaReact className="skill-icon" />
+    <SiTailwindcss className="skill-icon" />
+    <FaGithub className="skill-icon" />
+    <SiNpm className="skill-icon" />
+    <SiBootstrap className="skill-icon" />
+  </div>
+</div>
+
 </div>
 
       </div>
@@ -79,7 +103,19 @@ const MySkills = () => {
       <span>& more</span>
     </div>
   </div>
+
+  {/* Ikonrad */}
+  <div className="skills-icons">
+  <SiFigma className="skill-icon" title="Figma" />
+  <SiMiro className="skill-icon" title="Miro" />
+  <SiAdobephotoshop className="skill-icon" title="Photoshop" />
+  <SiAdobexd className="skill-icon" title="Adobe XD" />
+  <SiAdobeindesign className="skill-icon" title="InDesign" />
+  <SiAdobeillustrator className="skill-icon" title="Illustrator" />
+  <SiCanva className="skill-icon" title="Canva" />
 </div>
+</div>
+
       </div>
     </section>
   );
