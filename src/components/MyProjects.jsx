@@ -128,7 +128,7 @@ const MyProjects = () => {
         <div className={`projects-content ${isOpenFigma ? "open" : ""}`}>
   <div className="flex flex-col items-center justify-center space-y-6">
     {/* Beskrivningstext */}
-    <p className="text-[16px] md:text-[20px] max-w-[700px] text-start px-4">
+    <p className="text-[16px] md:text-[20px] max-w-[700px] text-center px-4">
       Fiktivt e-handelsbolag med fokus på smarta hem och innovativa tekniklösningar.
     </p>
 

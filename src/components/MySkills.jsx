@@ -28,18 +28,18 @@ const MySkills = () => {
         <div className={`skills-content ${isOpenFrontend ? "open" : ""}`}>
   <div className="skills-tags">
     <div className="tag-row left">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
+      <span>HTML,</span>
+      <span>CSS,</span>
+      <span>JavaScript,</span>
     </div>
     <div className="tag-row right">
-      <span>React</span>
-      <span>Tailwind</span>
-      <span>GitHub</span>
+      <span>React,</span>
+      <span>Tailwind,</span>
+      <span>GitHub,</span>
     </div>
     <div className="tag-row left">
-      <span>NPM</span>
-      <span>Bootstrap</span>
+      <span>NPM,</span>
+      <span>Bootstrap,</span>
       <span>& more</span>
     </div>
   </div>
@@ -62,20 +62,20 @@ const MySkills = () => {
         <div className={`skills-content ${isOpenDesign ? "open" : ""}`}>
   <div className="skills-tags">
     <div className="tag-row row-1">
-      <span>Figma</span>
-      <span>Miro</span>
+      <span>Figma,</span>
+      <span>Miro,</span>
     </div>
     <div className="tag-row row-2">
-      <span>Photoshop</span>
-      <span>Adobe XD</span>
+      <span>Photoshop,</span>
+      <span>Adobe XD,</span>
     </div>
     <div className="tag-row row-3">
-      <span>InDesign</span>
-      <span>Illustrator</span>
+      <span>InDesign,</span>
+      <span>Illustrator,</span>
     </div>
     <div className="tag-row row-4">
-      <span>Canva</span>
-      <span>UX/UI</span>
+      <span>Canva,</span>
+      <span>UX/UI,</span>
       <span>& more</span>
     </div>
   </div>

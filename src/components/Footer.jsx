@@ -17,7 +17,8 @@ const Footer = () => {
               className="footer-toggle"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <span>Jerker Danielsson</span>
+              
+              <span className="footer-name">Jerker Danielsson</span>
               <span className={`footer-icon ${isOpen ? "open" : ""}`}>
                 <FiArrowDownLeft />
               </span>

@@ -1,7 +1,7 @@
 .footer-section {
   background-color: #ffffff00;
   color: #1c1c1c;
-  padding: 6rem 1.5rem 8rem;
+  padding: 6rem 1.5rem 6rem;
   width: 100%;
   
 }
@@ -30,7 +30,20 @@ margin-bottom: -4rem;
   max-width: 660px;
   border-top: 1px solid #A0A0A0;
   border-bottom: 1px solid #A0A0A0;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+  border-radius: 8px;
+ 
 }
+
+.footer-name {
+  margin-left: 0.5rem;
+}
+
+.footer-box:hover {
+  border-color: #1C1C1C; /* eller valfri accentfärg */
+}
+
 
 .footer-toggle {
   width: 100%;
@@ -54,6 +67,7 @@ margin-bottom: -4rem;
 
 .footer-icon.open {
   transform: rotate(-45deg);
+  
 }
 
 .footer-content {
@@ -61,12 +75,14 @@ margin-bottom: -4rem;
   max-height: 0;
   opacity: 0;
   transition: all 0.5s ease;
+  
 }
 
 .footer-content.open {
   max-height: 1000px;
   opacity: 1;
   padding: 2rem 0;
+ 
 }
 
 .footer-inner {
@@ -84,6 +100,7 @@ margin-bottom: -4rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
 }
 
 .footer-row,
