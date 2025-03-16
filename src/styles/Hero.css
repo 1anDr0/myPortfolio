@@ -208,10 +208,10 @@
     max-height: 0;
     opacity: 0;
     transition: all 0.5s ease;
-    font-size: 18px;
+    font-size: clamp(14px, 6vw, 18px);
   }
   .cv-content.open {
-    max-height: 2000px;
+    max-height: 3000px;
     opacity: 1;
     padding: 1.5rem 0;
   }
@@ -441,9 +441,3 @@
   }
 }
 
-@media (max-width: 375px) {
-  .hero-box {
-   font-size: 18px;
-  }
-
-}
