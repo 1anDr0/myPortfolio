@@ -33,7 +33,7 @@
 }
 
 .navbar-title {
-  font-size: clamp(24px, 4vw, 24px);
+  font-size: clamp(20px, 4vw, 24px);
   font-weight: 500;
   letter-spacing: -0.05em;
 }
@@ -128,21 +128,4 @@
   }
 }
 
-@media (max-width: 375px) {
-  .navbar-container {
-    padding-left: 1rem;
-    padding-right: 4rem;
-  }
-  .navbar-toggle {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    gap: 0;
-  }
- 
-  .navbar-icon {
-    align-self: auto;
-  }
-}
 
