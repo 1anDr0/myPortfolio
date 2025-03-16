@@ -77,11 +77,12 @@
 
 .skills-icon {
   font-size: clamp(28px, 4vw, 48px);
+  transition: transform 0.5s ease;
 
 }
 
 .skills-icon.open {
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 .skills-icon.right.open {
   transform: rotate(45deg);
@@ -125,7 +126,7 @@
   transform: translateX(-12px); /* ← nu rör sig raden lite åt vänster */
 }
 
-.skills-icons {
+.skills-logos {
   display: flex;
   margin-top: 4rem;
   margin-bottom: 2rem;
@@ -133,13 +134,13 @@
   
 }
 
-.skill-icon {
+.skill-logo {
   font-size: 4rem;
   color: #1c1c1c;
   transition: transform 0.8s ease;
 }
 
-.skill-icon:hover {
+.skill-logo:hover {
   transform: translateX(-20px);
   
 }

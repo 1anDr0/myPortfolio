@@ -55,15 +55,15 @@ const MySkills = () => {
   </div>
 
   {/* ⬇ Ikoner under text-raderna */}
-  <div className="skills-icons">
-    <FaHtml5 className="skill-icon" />
-    <FaCss3Alt className="skill-icon" />
-    <FaJsSquare className="skill-icon" />
-    <FaReact className="skill-icon" />
-    <SiTailwindcss className="skill-icon" />
-    <FaGithub className="skill-icon" />
-    <SiNpm className="skill-icon" />
-    <SiBootstrap className="skill-icon" />
+  <div className="skills-logos">
+    <FaHtml5 className="skill-logo" />
+    <FaCss3Alt className="skill-logo" />
+    <FaJsSquare className="skill-logo" />
+    <FaReact className="skill-logo" />
+    <SiTailwindcss className="skill-logo" />
+    <FaGithub className="skill-logo" />
+    <SiNpm className="skill-logo" />
+    <SiBootstrap className="skill-logo" />
   </div>
 </div>
 
@@ -77,7 +77,7 @@ const MySkills = () => {
           onClick={() => setIsOpenDesign(!isOpenDesign)}
           className="skills-toggle"
         >
-          <span className={`skills-icon ${isOpenDesign ? "open" : ""}`}>
+          <span className={`skills-icon ${isOpenDesign ? "open right" : "right"}`}>
             <FiArrowDownRight />
           </span>
           <span className="skills-design">Design</span>
@@ -105,14 +105,14 @@ const MySkills = () => {
   </div>
 
   {/* Ikonrad */}
-  <div className="skills-icons">
-  <SiFigma className="skill-icon" title="Figma" />
-  <SiMiro className="skill-icon" title="Miro" />
-  <SiAdobephotoshop className="skill-icon" title="Photoshop" />
-  <SiAdobexd className="skill-icon" title="Adobe XD" />
-  <SiAdobeindesign className="skill-icon" title="InDesign" />
-  <SiAdobeillustrator className="skill-icon" title="Illustrator" />
-  <SiCanva className="skill-icon" title="Canva" />
+  <div className="skills-logos">
+  <SiFigma className="skill-logo" title="Figma" />
+  <SiMiro className="skill-logo" title="Miro" />
+  <SiAdobephotoshop className="skill-logo" title="Photoshop" />
+  <SiAdobexd className="skill-logo" title="Adobe XD" />
+  <SiAdobeindesign className="skill-logo" title="InDesign" />
+  <SiAdobeillustrator className="skill-logo" title="Illustrator" />
+  <SiCanva className="skill-logo" title="Canva" />
 </div>
 </div>
 
