@@ -232,7 +232,7 @@
 
   .cv-text {
     font-family: Helvetica, sans-serif;
-    font-size: clamp(16px, 2vw, 20px);
+    font-size: clamp(16px, 2vw, 16px);
     line-height: 1.5;
     max-width: 780px;
     margin-bottom: 2rem;
@@ -299,11 +299,8 @@
     font-weight: bold;            /* Valfritt avstånd under raden */
   }
 
-  h3 {
-    font-size: 24px;
+  .cv-heading {
     font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
   }
 
   

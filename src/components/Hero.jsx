@@ -39,72 +39,122 @@ const Hero = () => {
           <div className={`cv-content ${isOpenCV ? "open" : ""}`}>
             {language === "en" ? (
               <>
-                <p className="cv-text">
-                  I’m a frontend developer with a strong passion for layout and design.
-                  Originally from Rättvik, Dalarna, I’ve been living in Stockholm for over
-                  10 years. I thrive on creating modern, intuitive, and visually appealing
-                  interfaces that enhance user experience. With a keen eye for detail, I
-                  focus on clean layouts, thoughtful UI components, and seamless
-                  responsiveness. I’m always exploring new trends in web design to refine
-                  my craft, ensuring that my work balances aesthetics with functionality.
-                </p>
+               <p className="cv-text">
+               Structured and creative frontend developer with a strong sense for design, detail, and user experience. I work thoroughly, am solution-oriented, and collaborate easily in a team. As a person, I’m calm, flexible, and positive, with an ability to contribute to a safe and efficient work environment.
+              </p>
+        
+                <h3 className="cv-heading">Skills</h3>
+<hr />
+<ul className="my-list">
+  <li>See my skills further down on this page.</li>
+</ul>
+<br />
+<h3 className="cv-heading">Education</h3>
+<hr />
+<ul className="my-list">
+  <li>Jensen Education – Frontend Development (2024–ongoing)</li>
+</ul>
+<br />
+<h3 className="cv-heading">Additional Courses</h3>
+<hr />
+<ul className="my-list">
+  <li>NTI-Skolan – Graphic Communication (2023)</li>
+</ul>
+<br />
+<h3 className="cv-heading">Work Experience</h3>
+<hr />
+<br />
+<h3 className="cv-heading">Rena Snitt Sverige AB (cleancut.eu)</h3>
+<br />
+<div className="header-row">
+  <h5>E-commerce Coordinator</h5>
+  <br />
+  <h5>Feb 2013 – Jun 2024</h5>
+</div>
+<ul className="my-list">
+  <li>Handled daily order management and ensured efficient logistics and customer communication.</li>
+  <li>Provided customer support by managing inquiries, orders, and service requests.</li>
+  <li>Managed and developed the company’s social media presence, including Instagram and YouTube, through content creation and publishing.</li>
+  <li>Worked with the website's layout and design, created and updated product articles, and performed image editing to ensure a consistent visual profile.</li>
+  <li>See examples of my previous work further down on this page.</li>
+</ul>
+<br />
+<h3 className="cv-heading">Boda School / After-school program</h3>
+<br />
+<div className="header-row">
+  <h5>Leisure Educator & Teacher</h5>
+  <h5>Sep 2009 – Dec 2012</h5>
+</div>
+<ul className="my-list">
+  <li>Worked in both teaching and after-school activities, focusing on creating a safe and stimulating environment for students.</li>
+</ul>
+
                
               </>
             ) : (
               <>
-              <p className="my list">
-                Strukturerad och kreativ frontendutvecklare med god känsla för design, detaljer och användarvänlighet.
-                Jag arbetar noggrant, är lösningsorienterad och har lätt för att samarbeta i team. Som person är jag lugn,
-                flexibel och positiv, med en förmåga att bidra till en trygg och effektiv arbetsmiljö.
-              </p>
-              <br />
-              <h3>Färdigheter</h3>
-              <hr />
-              <p className="my-list">
-                Se mina färdigheter längre ner på sidan.</p>
-              
-              <br />
-              <h3>UTBILDNING</h3>
-              <hr />
-              <ul className="my-list">
-                <li>Jensen Education – Frontendutveckling (2024–pågående)</li>
-              </ul>
-              <br />
-              <h3>ÖVRIGA KURSER</h3>
-              <hr />
-              <ul className="my-list">
-                <li>NTI-Skolan – Grafisk Kommunikation (2023)</li>
-              </ul>
-               <br />
-              <h3>YRKESERFARENHETER</h3>
-              <hr />
-              <br />
-              <h3>Rena Snitt Sverige AB (cleancut.eu)</h3>
-            
-              <div className="header-row">
-                <h4>E-handelskoordinator</h4>
-                <h4>Feb 2013 – Jun 2024</h4>
-              </div>
-            
-              <ul className="my-list">
-                <li>Ansvarade för den dagliga orderhanteringen och säkerställde effektiv logistik och kundkommunikation.</li>
-                <li>Skötte kundtjänst och gav professionell service genom att hantera frågor, beställningar och supportärenden.</li>
-                <li>Hanterade och utvecklade företagets närvaro på sociala medier, inklusive Instagram och YouTube, genom innehållsskapande och publicering.</li>
-                <li>Arbetade med hemsidans layout och design, skapade och uppdaterade artiklar samt utförde bildredigering för en enhetlig visuell profil.</li>
-                <li>Se vad jag har gjort tidigare längre ner på sidan.</li>
-              </ul>
-              <br />
-              <h3>Boda skola/fritidshem</h3>
-              <div className="header-row">
-                <h4>Fritidsledare och lärare</h4>
-                <h4>Sep 2009 - dec 2012</h4>
-              </div>
-              <ul className="my-list">
-                <li>Arbetade med både undervisning och fritidsverksamhet, där fokus låg på att skapa en trygg och stimulerande miljö för eleverna.</li>
-              </ul>
-             
-            </>
-            
+  <p className="cv-text">
+    Strukturerad och kreativ frontendutvecklare med god känsla för design, detaljer och användarvänlighet.
+    Jag arbetar noggrant, är lösningsorienterad och har lätt för att samarbeta i team. Som person är jag lugn,
+    flexibel och positiv, med en förmåga att bidra till en trygg och effektiv arbetsmiljö.
+  </p>
+
+  <h3 className="cv-heading">Färdigheter</h3>
+  <hr />
+  <ul className="my-list">
+    <li>HTML, CSS, JavaScript</li>
+    <li>React</li>
+    <li>Figma, UX/UI-principer</li>
+    <li>Photoshop, InDesign, DaVinci Resolve</li>
+    <li>Responsiv design, Git & versionshantering</li>
+  </ul>
+
+  <br />
+
+  <h3 className="cv-heading">Utbildning</h3>
+  <hr />
+  <ul className="my-list">
+    <li>Jensen Education – Frontendutveckling (2024–pågående)</li>
+  </ul>
+
+  <br />
+
+  <h3 className="cv-heading">Övriga kurser</h3>
+  <hr />
+  <ul className="my-list">
+    <li>NTI-Skolan – Grafisk Kommunikation (2023)</li>
+  </ul>
+
+  <br />
+
+  <h3 className="cv-heading">Yrkeserfarenhet</h3>
+  <hr />
+
+  <br />
+  <h3 className="cv-heading">Rena Snitt Sverige AB (cleancut.se)</h3>
+  <div className="header-row">
+    <h5>E-handelskoordinator</h5>
+    <h5>Feb 2013 – Jun 2024</h5>
+  </div>
+  <ul className="my-list">
+    <li>Ansvarade för den dagliga orderhanteringen och säkerställde effektiv logistik och kundkommunikation.</li>
+    <li>Skötte kundtjänst och gav professionell service genom att hantera frågor, beställningar och supportärenden.</li>
+    <li>Hanterade och utvecklade företagets närvaro på sociala medier, inklusive Instagram och YouTube.</li>
+    <li>Arbetade med hemsidans layout och design, skapade och uppdaterade artiklar samt utförde bildredigering för en enhetlig visuell profil.</li>
+  </ul>
+
+  <br />
+
+  <h3 className="cv-heading">Boda skola / Fritidshem</h3>
+  <div className="header-row">
+    <h5>Fritidsledare och lärare</h5>
+    <h5>Sep 2009 – Dec 2012</h5>
+  </div>
+  <ul className="my-list">
+    <li>Arbetade med både undervisning och fritidsverksamhet, med fokus på att skapa en trygg och stimulerande miljö för elever i lågstadieålder.</li>
+  </ul>
+</>
+
             )}
               {/* Språkväljare längst ner i CV-accordion */}
             <div className="language-toggle inside-accordion">
