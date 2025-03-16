@@ -52,51 +52,51 @@ const Hero = () => {
               </>
             ) : (
               <>
-                <p className="cv-text">
-                Strukturerad och kreativ frontendutvecklare med god känsla för design, detaljer och användarvänlighet. Jag arbetar noggrant, är lösningsorienterad och har lätt för att samarbeta i team. Som person är jag lugn, flexibel och positiv, med en förmåga att bidra till en trygg och effektiv arbetsmiljö.
-                <br />
-                <br />
-                <h2>UTBILDNING</h2>
-                <hr></hr>
-                <ul className="my-list">
-               <li>Jensen Education – Frontendutveckling (2024–pågående)</li>
-               </ul>
-                <br />
-                <h2>ÖVRIGA KURSER</h2>
-                <hr></hr>
-                <ul className="my-list">
-               <li>NTI-Skolan - Grafisk Kommunikation (2023)</li>
-                <br />
-                </ul>
-                <h2>YRKESERFARENHETER</h2>
-                <hr></hr>
-                <h3>Rena snitt Sverige AB (cleancut.eu)</h3> <br />
-                <div class="header-row">
+              <p className="cv-text">
+                Strukturerad och kreativ frontendutvecklare med god känsla för design, detaljer och användarvänlighet.
+                Jag arbetar noggrant, är lösningsorienterad och har lätt för att samarbeta i team. Som person är jag lugn,
+                flexibel och positiv, med en förmåga att bidra till en trygg och effektiv arbetsmiljö.
+              </p>
+            
+              <h2>UTBILDNING</h2>
+              <hr />
+              <ul className="my-list">
+                <li>Jensen Education – Frontendutveckling (2024–pågående)</li>
+              </ul>
+            
+              <h2>ÖVRIGA KURSER</h2>
+              <hr />
+              <ul className="my-list">
+                <li>NTI-Skolan – Grafisk Kommunikation (2023)</li>
+              </ul>
+            
+              <h2>YRKESERFARENHETER</h2>
+              <hr />
+              <h3>Rena Snitt Sverige AB (cleancut.eu)</h3>
+            
+              <div className="header-row">
                 <h4>E-handelskoordinator</h4>
-                <h4>Feb 2013 - Jun 2024</h4>
-                </div>
-                <ul className="my-list">
-               <li>Ansvarade för den dagliga orderhanteringen och säkerställde effektiv logistik och kundkommunikation.</li>
-               <li>Skötte kundtjänst och gav professionell service genom att hantera frågor, beställningar och supportärenden.</li>
-              <li>Hanterade och utvecklade företagets närvaro på sociala medier, inklusive Instagram och YouTube, genom innehållsskapande och publicering.</li>
-              <li>Arbetade med hemsidans layout och design, skapade och uppdaterade artiklar samt utförde bildredigering för en enhetlig visuell profil.</li>
-               </ul>
-               <br />
-               <h3>Rena snitt Sverige AB (cleancut.eu)</h3> <br />
-                <h4>E-handelskoordinator</h4>
-                <ul className="my-list">
-               <li>Ansvarade för den dagliga orderhanteringen och säkerställde effektiv logistik och kundkommunikation.</li>
-               <li>Skötte kundtjänst och gav professionell service genom att hantera frågor, beställningar och supportärenden.</li>
-              <li>Hanterade och utvecklade företagets närvaro på sociala medier, inklusive Instagram och YouTube, genom innehållsskapande och publicering.</li>
-              <li>Arbetade med hemsidans layout och design, skapade och uppdaterade artiklar samt utförde bildredigering för en enhetlig visuell profil.</li>
-               </ul>
-
-               
-              
-
-                </p>
-               
-              </>
+                <h4>Feb 2013 – Jun 2024</h4>
+              </div>
+            
+              <ul className="my-list">
+                <li>Ansvarade för den dagliga orderhanteringen och säkerställde effektiv logistik och kundkommunikation.</li>
+                <li>Skötte kundtjänst och gav professionell service genom att hantera frågor, beställningar och supportärenden.</li>
+                <li>Hanterade och utvecklade företagets närvaro på sociala medier, inklusive Instagram och YouTube, genom innehållsskapande och publicering.</li>
+                <li>Arbetade med hemsidans layout och design, skapade och uppdaterade artiklar samt utförde bildredigering för en enhetlig visuell profil.</li>
+              </ul>
+            
+              <h3>Rena Snitt Sverige AB (cleancut.eu)</h3>
+              <h4>E-handelskoordinator</h4>
+            
+              <ul className="my-list">
+                <li>Ansvarade för den dagliga orderhanteringen och säkerställde effektiv logistik och kundkommunikation.</li>
+                <li>Skötte kundtjänst och gav professionell service genom att hantera frågor, beställningar och supportärenden.</li>
+                <li>Hanterade och utvecklade företagets närvaro på sociala medier, inklusive Instagram och YouTube, genom innehållsskapande och publicering.</li>
+                <li>Arbetade med hemsidans layout och design, skapade och uppdaterade artiklar samt utförde bildredigering för en enhetlig visuell profil.</li>
+              </ul>
+            </>
+            
             )}
               {/* Språkväljare längst ner i CV-accordion */}
             <div className="language-toggle inside-accordion">
