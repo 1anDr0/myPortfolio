@@ -443,7 +443,7 @@
 
 @media (max-width: 375px) {
   .hero-box {
- 
+   font-size: 18px;
   }
 
 }

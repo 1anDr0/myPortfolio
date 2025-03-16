@@ -115,7 +115,7 @@
 @media (max-width: 640px) {
   .navbar-container {
     padding-left: 2rem;
-    padding-right: 3rem;
+    padding-right: 4rem;
   }
   .navbar-toggle {
     flex-direction: row;
