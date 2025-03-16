@@ -208,6 +208,7 @@
     max-height: 0;
     opacity: 0;
     transition: all 0.5s ease;
+    font-size: 18px;
   }
   .cv-content.open {
     max-height: 2000px;
@@ -230,13 +231,7 @@
   cursor: pointer;
   }
 
-  .cv-text {
-    font-family: Helvetica, sans-serif;
-    font-size: clamp(16px, 2vw, 16px);
-    line-height: 1.5;
-    max-width: 780px;
-    margin-bottom: 2rem;
-  }
+  
   
   .language-toggle {
     display: flex;
@@ -303,6 +298,14 @@
     font-weight: bold;
   }
 
+  .cv-text {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 780px;
+    margin-bottom: 2rem;
+    
+  }
   
   /* ===================== */
   /* RESPONSIVITET – LAPTOPS & DESKTOPS */
@@ -438,4 +441,10 @@
   }
 }
 
-  
+@media (max-width: 375px) {
+  .hero-box {
+    padding-left: 0rem;
+    padding-right: 10rem;
+  }
+
+}

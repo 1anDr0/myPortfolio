@@ -169,6 +169,26 @@
   margin-top: 2rem;
 }
 
+.about-text {
+  max-width: 780px;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #222;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
+.about-text strong {
+  font-weight: bold;
+}
+
+.about-text em {
+  font-style: italic;
+}
 
 /* RESPONSIV JUSTERING */
 @media (max-width: 640px) {

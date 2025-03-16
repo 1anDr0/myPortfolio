@@ -23,18 +23,21 @@ const SeekingLIASection = () => {
 
           <div className={`lia-content ${isOpen ? "open" : ""}`}>
             {language === "en" ? (
-              <>
-                <p className="lia-text">
-                  I’m a frontend developer with a strong passion for layout and design.
-                  Originally from Rättvik, Dalarna, I’ve been living in Stockholm for over
-                  10 years. I thrive on creating modern, intuitive, and visually appealing
-                  interfaces that enhance user experience. With a keen eye for detail, I
-                  focus on clean layouts, thoughtful UI components, and seamless
-                  responsiveness. I’m always exploring new trends in web design to refine
-                  my craft, ensuring that my work balances aesthetics with functionality.
-                </p>
-                
-              </>
+             <div className="about-text">
+             <p>
+               <strong>Snyggt!</strong> Det är nog det ord som bäst beskriver vad jag vill jobba med i framtiden. <br /><br />
+               Snyggt kanske är ett vagt ord – vad betyder det egentligen? För mig handlar det om när något både fungerar och ser bra ut. Det är den där känslan av stilrenhet, luftighet och tydlighet, där form och funktion hänger ihop utan att man riktigt kan sätta fingret på varför det känns så rätt.
+             </p>
+           
+             <p>
+               Det där har nog funnits med mig längre än jag själv förstått. Som barn kunde jag lägga timmar på att <strong>rita/designa fotbollströjor</strong> – med hög ambition och minutiös precision. Men det jag egentligen var ute efter var inte detaljer för detaljernas skull – det var känslan av att det blev… snyggt. Det räckte ofta med ett litet klubbemblem i rätt storlek och rätt placering – då satt det. <em>Inga onödiga ränder, inga konstiga färger. Cleant!</em>
+             </p>
+           
+             <p>
+               Idag är det just den känslan jag vill förmedla i det jag skapar som frontendstudent. Att få något att kännas självklart. Att bygga gränssnitt som inte bara fungerar, utan känns genomtänkta, enkla att ta in – och snygga.
+             </p>
+           </div>
+           
             ) : (
               <>
                 <p className="lia-text">
