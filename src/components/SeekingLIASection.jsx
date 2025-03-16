@@ -30,7 +30,7 @@ const SeekingLIASection = () => {
              </p>
            
              <p>
-               Det där har nog funnits med mig längre än jag själv förstått. Som barn kunde jag lägga timmar på att <strong>rita/designa fotbollströjor</strong> – med hög ambition och minutiös precision. Men det jag egentligen var ute efter var inte detaljer för detaljernas skull – det var känslan av att det blev… snyggt. Det räckte ofta med ett litet klubbemblem i rätt storlek och rätt placering – då satt det. <em>Inga onödiga ränder, inga konstiga färger. Cleant!</em>
+               Det där har nog funnits med mig längre än jag själv förstått. Som barn kunde jag lägga timmar på att rita/designa fotbollströjor – med hög ambition och minutiös precision. Men det jag egentligen var ute efter var inte detaljer för detaljernas skull – det var känslan av att det blev… snyggt. Det räckte ofta med ett litet klubbemblem i rätt storlek och rätt placering – då satt det. <em>Inga onödiga ränder, inga konstiga färger. Cleant!</em>
              </p>
            
              <p>
