@@ -52,26 +52,33 @@ const Hero = () => {
               </>
             ) : (
               <>
-              <p className="cv-text">
+              <p className="my list">
                 Strukturerad och kreativ frontendutvecklare med god känsla för design, detaljer och användarvänlighet.
                 Jag arbetar noggrant, är lösningsorienterad och har lätt för att samarbeta i team. Som person är jag lugn,
                 flexibel och positiv, med en förmåga att bidra till en trygg och effektiv arbetsmiljö.
               </p>
-            
-              <h2>UTBILDNING</h2>
+              <br />
+              <h3>Färdigheter</h3>
+              <hr />
+              <p className="my-list">
+                Se mina färdigheter längre ner på sidan.</p>
+              
+              <br />
+              <h3>UTBILDNING</h3>
               <hr />
               <ul className="my-list">
                 <li>Jensen Education – Frontendutveckling (2024–pågående)</li>
               </ul>
-            
-              <h2>ÖVRIGA KURSER</h2>
+              <br />
+              <h3>ÖVRIGA KURSER</h3>
               <hr />
               <ul className="my-list">
                 <li>NTI-Skolan – Grafisk Kommunikation (2023)</li>
               </ul>
-            
-              <h2>YRKESERFARENHETER</h2>
+               <br />
+              <h3>YRKESERFARENHETER</h3>
               <hr />
+              <br />
               <h3>Rena Snitt Sverige AB (cleancut.eu)</h3>
             
               <div className="header-row">
@@ -84,17 +91,18 @@ const Hero = () => {
                 <li>Skötte kundtjänst och gav professionell service genom att hantera frågor, beställningar och supportärenden.</li>
                 <li>Hanterade och utvecklade företagets närvaro på sociala medier, inklusive Instagram och YouTube, genom innehållsskapande och publicering.</li>
                 <li>Arbetade med hemsidans layout och design, skapade och uppdaterade artiklar samt utförde bildredigering för en enhetlig visuell profil.</li>
+                <li>Se vad jag har gjort tidigare längre ner på sidan.</li>
               </ul>
-            
-              <h3>Rena Snitt Sverige AB (cleancut.eu)</h3>
-              <h4>E-handelskoordinator</h4>
-            
+              <br />
+              <h3>Boda skola/fritidshem</h3>
+              <div className="header-row">
+                <h4>Fritidsledare och lärare</h4>
+                <h4>Sep 2009 - dec 2012</h4>
+              </div>
               <ul className="my-list">
-                <li>Ansvarade för den dagliga orderhanteringen och säkerställde effektiv logistik och kundkommunikation.</li>
-                <li>Skötte kundtjänst och gav professionell service genom att hantera frågor, beställningar och supportärenden.</li>
-                <li>Hanterade och utvecklade företagets närvaro på sociala medier, inklusive Instagram och YouTube, genom innehållsskapande och publicering.</li>
-                <li>Arbetade med hemsidans layout och design, skapade och uppdaterade artiklar samt utförde bildredigering för en enhetlig visuell profil.</li>
+                <li>Arbetade med både undervisning och fritidsverksamhet, där fokus låg på att skapa en trygg och stimulerande miljö för eleverna.</li>
               </ul>
+             
             </>
             
             )}
