@@ -104,33 +104,6 @@
   margin-top: 2.5rem;
 }
 
-.lia-download-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  background-color: rgba(255, 255, 255, 0);
-  color: #1C1C1C;
-  border: 2px solid #1C1C1C;
-  height: 44px;
-  padding: 10px 20px;
-  border-radius: 9999px;
-  font-size: clamp(16px, 3vw, 20px);
-  font-weight: 500;
-  font-family: Helvetica, sans-serif;
-  transition: all 0.3s ease;
-}
-
-
-.lia-download-btn:hover {
-  background-color: #1C1C1C;
-  color: white;
-}
-
-.lia-download-icon {
-  width: 0.75em;
-  height: 0.75em;
-}
-
 .language-toggle {
   display: flex;
   gap: 1rem;
@@ -256,6 +229,12 @@
   .lia-section {
     padding: 4rem 1.5rem 6rem;
     margin-bottom: -160px;
+    
+  }
+  .about-text {
+    font-size: 14px
+   
+    
   }
 }
 

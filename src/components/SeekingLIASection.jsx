@@ -22,7 +22,7 @@ const SeekingLIASection = () => {
           </button>
 
           <div className={`lia-content ${isOpen ? "open" : ""}`}>
-            {language === "en" ? (
+            {language === "sv" ? (
              <div className="about-text">
              <p>
                <strong>Snyggt!</strong> Det är nog det ord som bäst beskriver vad jag vill jobba med i framtiden. <br /><br />
@@ -40,33 +40,39 @@ const SeekingLIASection = () => {
            
             ) : (
               <>
-                <p className="lia-text">
-                  Jag är en frontendutvecklare med stark passion för layout och design.
-                  Ursprungligen från Rättvik i Dalarna, men har bott i Stockholm i över
-                  10 år. Jag brinner för att skapa moderna, intuitiva och visuellt tilltalande
-                  gränssnitt som förbättrar användarupplevelsen. Med ett öga för detaljer
-                  fokuserar jag på rena layouter, genomtänkta UI-komponenter och
-                  responsiv design. Jag följer gärna nya trender inom webbdesign för att
-                  ständigt utveckla min kompetens och skapa balans mellan form och funktion.
-                </p>
+                <div className="about-text">
+  <p>
+    <strong>Nice!</strong> That’s probably the word that best describes what I want to work with in the future. <br /><br />
+    “Nice” might sound vague – what does it even mean? To me, it’s about when something both works well and looks good. That sense of simplicity, spaciousness and clarity, where form and function come together in a way that just feels right.
+  </p>
+
+  <p>
+    I think that feeling has been with me longer than I realized. As a kid, I could spend hours drawing/designing football kits – with high ambition and meticulous precision. But it wasn’t really about the details themselves – it was about the feeling of when it all came together and looked... nice. A small club badge, just the right size and placed just right – that’s when it clicked. <em>No unnecessary stripes, no weird colors. Clean!</em>
+  </p>
+
+  <p>
+    Today, it’s that same feeling I try to capture in what I create as a frontend student. Making things feel intuitive. Building interfaces that not only work – but feel considered, easy to take in – and yes, nice.
+  </p>
+</div>
                 
               </>
             )}
 
             {/* Språkväljare inuti accordionen */}
             <div className="language-toggle inside-accordion">
+            <button
+                onClick={() => setLanguage("sv")}
+                className={language === "sv" ? "active-lang" : ""}
+              >
+                SV
+              </button>
               <button
                 onClick={() => setLanguage("en")}
                 className={language === "en" ? "active-lang" : ""}
               >
                 EN
               </button>
-              <button
-                onClick={() => setLanguage("sv")}
-                className={language === "sv" ? "active-lang" : ""}
-              >
-                SV
-              </button>
+             
             </div>
           </div>
         </div>
