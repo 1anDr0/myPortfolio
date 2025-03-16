@@ -132,26 +132,4 @@
 
 
 
-@media (max-width: 480px) {
-  .navbar-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 
-  .navbar-links {
-    gap: 1.2rem;
-    font-size: 20px;
-  }
-
-  .navbar-icon {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 350px) {
-  .navbar-container {
-    padding-left: 1.5rem;
-    padding-right: 3rem;
-  }
-
-}
