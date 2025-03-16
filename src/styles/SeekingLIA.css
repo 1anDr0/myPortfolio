@@ -119,6 +119,7 @@
   transition: all 0.3s ease;
 }
 
+
 .lia-download-btn:hover {
   background-color: #1C1C1C;
   color: white;
@@ -128,6 +129,46 @@
   width: 0.75em;
   height: 0.75em;
 }
+
+.language-toggle {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: flex-end;
+}
+
+.language-toggle button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: #1C1C1C;
+  
+  padding: 0px 14px;
+  border-radius: 9999px;
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 500;
+  font-family: Helvetica, sans-serif;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.language-toggle button:hover {
+  background-color: #d8d8d8;
+  color: #1C1C1C;
+}
+
+.language-toggle .active-lang {
+  background-color: #1C1C1C;
+  color: #fff;
+}
+
+/* Justera extra spacing om du vill särskilja från texten */
+.language-toggle.inside-accordion {
+  margin-top: 2rem;
+}
+
 
 /* RESPONSIV JUSTERING */
 @media (max-width: 640px) {
