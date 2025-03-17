@@ -4,7 +4,7 @@ import "../styles/SeekingLIA.css";
 
 const SeekingLIASection = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("sv");
 
   return (
     <section className="lia-section">
