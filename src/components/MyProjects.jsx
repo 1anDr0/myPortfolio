@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import { FiArrowDownRight, FiArrowDownLeft } from "react-icons/fi";
-import { FaGithub } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
