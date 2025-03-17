@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FiArrowDownLeft, FiDownload } from "react-icons/fi";
+import { FiArrowDownLeft } from "react-icons/fi";
 // import { FaCode, FaPaintBrush } from "react-icons/fa";
 // import { MdOutlineSportsVolleyball } from "react-icons/md";
 // import dalahorseImage from "../assets/Dalecarlian_horse.svg.png";

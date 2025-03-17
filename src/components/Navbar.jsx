@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiArrowDownLeft } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin} from "react-icons/fa";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
