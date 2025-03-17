@@ -58,7 +58,7 @@
   justify-content: space-between;
   align-items: center;
   font-family: Helvetica, sans-serif;
-  font-size: clamp(18px, 3vw, 24px);
+  font-size: clamp(20px, 3vw, 24px);
   font-weight: 500;
   letter-spacing: -0.05em;
   padding: 0rem 0;
@@ -120,7 +120,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-size: clamp(32px, 4vw, 96px);
+  font-size: clamp(28px, 4vw, 96px);
   font-weight: bold;
   letter-spacing: -0.07em;
   transition: transform 0.8s ease;
@@ -139,7 +139,7 @@
 }
 
 .skill-logo {
-  font-size: 4rem;
+  font-size: clamp(28px, 4vw, 72px);
   color: #1c1c1c;
   transition: transform 0.8s ease;
 }
@@ -204,10 +204,5 @@
   .skills-wrapper {
     font-size: clamp(18px, 4vw, 26px);
   }
-  .skills-tags {
-    font-size: 20px;
-  }
-  .skills-icons {
-    font-size: 24px;
-  }
+
 }
