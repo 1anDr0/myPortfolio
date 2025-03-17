@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FiArrowDownLeft } from "react-icons/fi";
-import { FaGithub, FaLinkedin} from "react-icons/fa";
+import { FiArrowDownLeft, FiDownload } from "react-icons/fi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
@@ -26,7 +26,11 @@ const Navbar = () => {
         <div className="navbar-links">
         <a href="#contact" className="nav-link">CONTACT</a>
 
-          <a href="#cv" className="nav-link">CV</a>
+        <a href="/cv-jerker-danielsson.pdf" download className="nav-link icon-link">
+        <span>CV</span>
+          <FiDownload />
+           </a>
+          
          
           <a href="https://github.com/1anDr0" target="_blank" rel="noopener noreferrer" className="nav-link icon-link">
             <span>GITHUB</span>

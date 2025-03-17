@@ -51,9 +51,9 @@
 
 .skills-toggle {
   
-  z-index: 1000 !important;
+  z-index: 50 !important;
   position: relative;
-  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,14 +96,14 @@
   overflow: hidden;
   max-height: 0;
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: max-height 0.6s ease, opacity 0.5s ease;
   padding: 0;
 }
 
 .skills-content.open {
   max-height: 1000px;
   opacity: 1;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .skills-tags {
