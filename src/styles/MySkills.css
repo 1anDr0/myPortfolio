@@ -50,6 +50,9 @@
 
 
 .skills-toggle {
+  
+  z-index: 1000 !important;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -94,6 +97,7 @@
   max-height: 0;
   opacity: 0;
   transition: all 0.5s ease;
+  padding: 0;
 }
 
 .skills-content.open {
