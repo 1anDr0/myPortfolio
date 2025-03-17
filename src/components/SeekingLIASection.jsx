@@ -10,7 +10,7 @@ const SeekingLIASection = () => {
     <section className="lia-section">
       <div className="lia-wrapper">
         <h1 className="lia-heading">
-          Seeking LIA /internship from November 2025/11/04
+          Seeking LIA /internship from November 2025/11/24
         </h1>
 
         <div className="lia-box">
